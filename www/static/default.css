@@ -379,3 +379,12 @@ html>body #footer {
 	font-weight: normal;
 	color: #1B75A9;
 }
+
+.cattable td{
+	width: 25%;
+	height: 100px;
+	border: 1px solid black;
+	line-height: 100px;
+	text-align: center;
+	
+}
