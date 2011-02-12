@@ -16,7 +16,7 @@
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="#"><img src=/images/helpinglogo.png"></a></h1>
+	<h1><a href="#"><img src="/images/helpinglogo.png"></a></h1>
 </div>
 <div id="header">
 	<div id="menu">
