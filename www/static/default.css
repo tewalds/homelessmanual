@@ -8,8 +8,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #28313A url(images/img01.jpg) repeat-x left top;
-	font-size: 12px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-align: justify;
 	color: #5C5C5C;
 }
@@ -18,7 +18,7 @@ h1, h2, h3 {
 	margin: 0;
 	text-transform: lowercase;
 	font-weight: normal;
-	color: #FFFFFF;
+	color: #1B75A9;
 }
 
 h1 {
