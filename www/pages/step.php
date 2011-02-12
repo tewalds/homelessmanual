@@ -39,6 +39,8 @@ return true;
 
 function newstep($data, $user) {
 
-$db->pquery("INSERT INTO steps SET
+	$db->pquery("INSERT INTO steps SET title = ?, date = ?, category = ?, creatorid = ?, lastmodifiedid = ?", $data['title'], time(), $data['category'], $user['id']); 
+
+	redirect("/editstep");
 
 ?>
