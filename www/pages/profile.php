@@ -35,6 +35,19 @@ function viewprofile($data, $user){
 }
 
 function editprofile($data, $user){
+	global $db;
 
+	$u = $db->pquery("SELECT * FROM users WHERE userid = ?", $user->userid)->fetchrow();
+	include("templates/editprofile.php");
+	return true;
+}
+
+function updateprofile($data, $user){
+	global $db;
+
+	$db->pquery("UPDATE users SET name = ?, organization = ?, bio = ? WHERE userid = ?", $data['name'], $data['organization'], $data['bio'], $user->userid);
+
+	redirect("/viewprofile?id=" . $user->userid);
+	return false;
 }
 
