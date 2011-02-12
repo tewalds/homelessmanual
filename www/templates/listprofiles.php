@@ -11,7 +11,7 @@ Search for Profile: <input type="text">
 		
 		</td>
 		<td width="100%">
-			<span class="profile-name"><a href="/viewprofile?id=<?= $user['id'] ?>"><?= $user['name'] ?></a></span>
+			<span class="profile-name"><a href="/viewprofile?id=<?= $user['userid'] ?>"><?= $user['name'] ?></a></span>
 			<span class="profile-company"><?= $user['organization'] ?></span>
 			<span class="profile-type">Caseworker/Client/Admin</span>
 		</td>
