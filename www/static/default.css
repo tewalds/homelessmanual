@@ -7,7 +7,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background: #28313A url(/static/images/img01.jpg) repeat-x left top;
+	background: #28313A url(images/img01.jpg) repeat-x left top;
 	font-size: 12px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	text-align: justify;
@@ -106,7 +106,7 @@ input, textarea, select {
 	float: left;
 	width: 880px;
 	height: 58px;
-	background: url(/static/images/img02.jpg) repeat-x left top;
+	background: url(images/img02.jpg) repeat-x left top;
 }
 
 #menu ul {
@@ -124,7 +124,7 @@ input, textarea, select {
 #menu a {
 	display: block;
 	padding: 0 50px;
-	background: url(/static/images/img03.jpg) no-repeat right 50%;
+	background: url(images/img03.jpg) no-repeat right 50%;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 11px;
@@ -214,7 +214,7 @@ input, textarea, select {
 .post h1 {
 	width: 520px;
 	padding: 0px 0 0 0px;
-	background: url(/static/images/img08.jpg) no-repeat left top;
+	background: url(images/img08.jpg) no-repeat left top;
 	font-size: 24px;
 	color: #28313A; 
 }
@@ -292,7 +292,7 @@ input, textarea, select {
 	width: 250px;
 	padding: 8px 0 0 0px;
 	margin-bottom: 10px;
-	background: url(/static/images/img07.jpg) no-repeat left top;
+	background: url(images/img07.jpg) no-repeat left top;
 	font-size: 20px;
 	color: #28313A; 
 }
