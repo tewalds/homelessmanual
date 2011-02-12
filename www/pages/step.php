@@ -2,7 +2,7 @@
 //view Question queries db for correct id, checks if the id exists, if so, checks question id against step id, returns
 //all steps related to this question in an array
 
-function viewQuestion($data, $user) {
+function viewstep($data, $user) {
 	global $db;
 	
 	if($data['id'] !== 0) {
@@ -19,40 +19,26 @@ function viewQuestion($data, $user) {
 	
 	else
 	{
-		redirect("/templates/category.php");
+		redirect("/listcategories");
 	}
-}
-
+	
 return true;
 
-?>
+}
 
-<? 
+//start of editstep function
 
-//create question function
-
-function createquestion($data, $user) {
-	global $db;
-	
-	include("templates/createquestion.php");
-	
-	$db->pquery("INSERT * INTO questions SET title = ?, date = ?, category =?", $data['title'], time(), $data['category']);
-	
-	return true;
-}	
-?>
-
-
-<?
-
-//edit question function
-
-function editquestion($data, $user) {
+function editstep($data, $user) {
 
 $db->pquery("UPDATE questions SET title = ?, date = ?, category = ?, lastmodifiedid = ? WHERE id = ?", $data['title'], time(), $data['category'], $user->userid, $data['id']);
 
+
+return true;
+
 }
 
+function newstep($data, $user) {
+
+$db->pquery("INSERT INTO steps SET
+
 ?>
-
-
