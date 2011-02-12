@@ -1,27 +1,18 @@
 <?
 
-function skin($body){
+function skin($user, $body){
 	global $config;
-?>
-<html>
-	<head>
-		<title><?= $config['site_name'] ?></title>
 
-		<link rel="stylesheet" href="/static/basic.css" type="text/css" />
-		<script type="text/javascript" src="/static/basic.js"></script>
-	</head>
-	<body>
+	$email = "";
+	$key = "";
+	$longsession = true;
 
-<div>
-<a href="/">Home</a> |
-<a href="/logout">Logout</a>
-<br><br>
-</div>
+	$menu = array();
+	$menu["Home"] = "/";
 
-<?= $body ?>
+	if($user->userid)
+		$menu["Logout"] = "/logout";
 
-	</body>
-</html>
-<?
+	include("templates/skin.php");
 }
 

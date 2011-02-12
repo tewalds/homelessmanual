@@ -17,7 +17,8 @@ $router->addauth("api");   //must be using a valid api key
 $router->add("GET", "/",     "home.php", "home", 'any', null);
 $router->add("GET", "/info", "home.php", "info", 'any',  null);
 
-$router->addprefix("GET", "/static/", "static.php", "staticcontent", 'any', 'null');
+$router->addprefix("GET", "/static/", "static.php", "staticcontent", 'any', null);
+$router->addprefix("GET", "/images/", "static.php", "staticimages", 'any', null);
 
 $router->add("POST","/login",  "account.php", "login",  'anon',  array("email" => "string", "password" => "string", "longsession" => "bool"));
 $router->add("GET", "/logout", "account.php", "logout", 'user',  null);
@@ -71,7 +72,7 @@ $body = ob_get_clean();
 
 if($ret){
 	include('include/skin.php');
-	skin($body);
+	skin($user, $body);
 }else
 	echo $body;
 
