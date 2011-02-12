@@ -39,6 +39,9 @@ $router->add("GET", "/editprofile",   "profile.php", "editprofile",   'user',  n
 $router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  array("name" => "string", "organization" => "string", "bio" => "string"));
 
 
+$router->add("GET", "/viewstep",       "step.php",    "viewstep",     'user',  array("id" => "int");
+$router->add("POST","/editstep",       "step.php",    "edit",         'user',  array("id" => "int");
+
 $route = $router->route();
 
 $user = auth(def($_COOKIE['session'], ''));
