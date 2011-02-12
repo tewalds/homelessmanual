@@ -11,7 +11,7 @@ function listcategories($data, $user){
 function viewcategory($data, $user){
 	global $db;
 
-	$category = $db->pquery("SELECT * FROM categories WHERE id = ?", $data['id'])->fetchrowset();
+	$category = $db->pquery("SELECT * FROM categories WHERE id = ?", $data['id'])->fetchrow();
 	
 	if($category){
 		$steps = $db->pquery("SELECT id, title FROM steps WHERE category = ?", $data['id'])->fetchrowset();
