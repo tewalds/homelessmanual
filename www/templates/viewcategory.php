@@ -2,7 +2,7 @@
 <table border="0" width="100%">
 	<tr>
 		<td colspan="2">
-		 <h1>$category</h1>
+		 <h1><?= $category['title'] ?></h1>
 		</td>
 	</tr>
 <? foreach($steps as $step){ ?>
