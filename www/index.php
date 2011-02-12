@@ -17,6 +17,8 @@ $router->addauth("api");   //must be using a valid api key
 $router->add("GET", "/",     "home.php", "home", 'any', null);
 $router->add("GET", "/info", "home.php", "info", 'any',  null);
 
+$router->addprefix("GET", "/static/", "static.php", "staticcontent", 'any', 'null');
+
 $router->add("POST","/login",  "account.php", "login",  'anon',  array("email" => "string", "password" => "string", "longsession" => "bool"));
 $router->add("GET", "/logout", "account.php", "logout", 'user',  null);
 
@@ -64,7 +66,7 @@ switch($route->auth){
 ob_start();
 if($route->file)
 	require("pages/" . $route->file);
-$ret = call_user_func($route->function, $route->data, $user);
+$ret = call_user_func($route->function, $route->data, $user, $route->url);
 $body = ob_get_clean();
 
 if($ret){

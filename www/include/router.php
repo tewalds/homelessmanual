@@ -6,11 +6,13 @@ function def( & $var, $def){
 
 class PHPRouter {
 	public $paths;
+	public $prefixes;
 	public $errors;
 	public $auths;
 
 	function __construct(){
 		$this->paths = array("GET" => array(), "POST" => array());
+		$this->prefixes = array("GET" => array(), "POST" => array());
 		$this->errors = array("404" => array($this, "fourohfour"));
 		$this->auths = array();
 	}
@@ -25,17 +27,32 @@ class PHPRouter {
 		$this->paths[$type][$url] = new PathNode($type, $url, $file, $function, $auth, $inputs);
 	}
 
+	function addprefix($type, $url, $file, $function, $auth, $inputs){
+		if(!isset($this->auths[$auth]))
+			die("Unknown auth type $auth\n");
+		$this->prefixes[$type][$url] = new PathNode($type, $url, $file, $function, $auth, $inputs);
+	}
+
 	function route(){
 		$type = $_SERVER['REQUEST_METHOD'];
 		$uri  = $_SERVER['REQUEST_URI'];
 
 		$url = explode('?', $uri, 2);
-		$url = $url[0];
+		$url = strtolower($url[0]);
 
-		if(!isset($this->paths[$type][$url]))
-			return new Route(null, $this->errors["404"], 'any', null);
-
-		$node = $this->paths[$type][$url];
+		if(isset($this->paths[$type][$url])){
+			$node = $this->paths[$type][$url];
+		}else{
+			$node = null;
+			foreach($this->prefixes[$type] as $prefix){
+				if(substr($url, 0, strlen($prefix->url)) == $prefix->url){
+					$node = $prefix;
+					break;
+				}
+			}
+			if($node == null)
+				return new Route(null, $this->errors["404"], 'any', null, $url);
+		}
 
 		$data = array();
 		if(is_array($node->inputs)){
@@ -45,7 +62,7 @@ class PHPRouter {
 				$data[$k] = $this->validate($source, $k, $v);
 		}
 
-		return new Route($node->file, $node->function, $node->auth, $data);
+		return new Route($node->file, $node->function, $node->auth, $data, $url);
 	}
 
 	function validate($source, $key, $type){
@@ -103,8 +120,8 @@ class PHPRouter {
 		}
 	}
 
-	function fourohfour(){
-		echo "404 - page not found!";
+	function fourohfour($data, $user, $url){
+		echo "404 - page not found!<br/>" . htmlentities($url);
 	}
 }
 
@@ -131,11 +148,13 @@ class Route {
 	public $function;
 	public $auth;
 	public $data;
+	public $url;
 
-	function __construct($file, $function, $auth, $data){
+	function __construct($file, $function, $auth, $data, $url){
 		$this->file = $file;
 		$this->function = $function;
 		$this->auth = $auth;
 		$this->data = $data;
+		$this->url = $url;
 	}
 }
