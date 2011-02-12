@@ -49,6 +49,7 @@ function staticimages($data, $user, $url){
 	if(!file_exists($file))
 		redirect("/404?referer=$url");
 
+	$fileending = substr($file, strrpos($file,'.'));
 	header("Content-Type: " . $filetypes[$fileending]);
 
 	readfile($file);
