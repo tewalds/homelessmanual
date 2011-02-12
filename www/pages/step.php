@@ -5,14 +5,14 @@
 function viewQuestion($data, $user) {
 	global $db;
 	
-	if($data['id'] != 0) {
+	if($data['id'] !== 0) {
 		$step = $db->pquery("SELECT * FROM steps WHERE id = ?", $data['id'])->fetchrow();
 		
 		if($data['id'] !== 0) {
 		
 		$statement = $db->pquery("SELECT * FROM steporder WHERE parentstepid = (?) ORDER BY priority", $data['id'])->fetchrowset();
 							
-		include("templates/viewquestion.php");
+		include("templates/viewstep.php");
 		
 		}
 	}
@@ -22,6 +22,8 @@ function viewQuestion($data, $user) {
 		redirect("/templates/category.php");
 	}
 }
+
+return true;
 
 ?>
 
@@ -36,6 +38,7 @@ function createquestion($data, $user) {
 	
 	$db->pquery("INSERT * INTO questions SET title = ?, date = ?, category =?", $data['title'], time(), $data['category']);
 	
+	return true;
 }	
 ?>
 
