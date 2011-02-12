@@ -42,6 +42,9 @@ $router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  a
 $router->add("GET", "/viewstep",       "step.php",    "viewstep",     'user',  array("id" => "int"));
 $router->add("POST","/editstep",       "step.php",    "editstep",     'user',  array("id" => "int"));
 
+$router->add("GET", "/listcategories", "categories.php", "listcategories", 'any', null);
+$router->add("GET", "/viewcategory",   "categories.php", "viewcategory",   'any', array("id" => "int"));
+
 
 $route = $router->route();
 
