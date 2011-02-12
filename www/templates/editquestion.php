@@ -16,16 +16,16 @@ $QuestionTitle = "a bank account";
 		</td>
 	</tr>
 	<tr>
-		<td>1.<input size="100" type="text" value="Step(question title) as a type ahead"></td><td>[substep count]</td>
+		<td>1.<input size="100" type="text" value="Step(question title) as a type ahead"></td><td><button>add substep</button></td><td><button>show substeps</button></td><td>[substep count]</td>
 	</tr>
 	<tr>
-		<td>2.<input size="100" type="text" value="Step(question title) as a type ahead"></td><td>[substep count]</td>
+		<td>2.<input size="100" type="text" value="Step(question title) as a type ahead"></td><td><button>add substep</button></td><td><button>show substeps</button></td><td>[substep count]</td>
 	</tr>
 	<tr>
-		<td>3.<input size="100" type="text" value="Step(question title) as a type ahead"></td><td>[substep count]</td>
+		<td>3.<input size="100" type="text" value="Step(question title) as a type ahead"></td><td><button>add substep</button></td><td><button>show substeps</button></td><td>[substep count]</td>
 	</tr>
 	
-	<tr><td colspan="2"><button>add step</button><button>add substep</button></td></tr>
+	<tr><td colspan="2"><button>add step</button></td></tr>
 </table>
 
 <table border="0" width="100%">
