@@ -7,6 +7,7 @@
 		 
 		 <h2>
 		<select><option>How do I get</option><option>Where do I find</option><option>Who do I contact to</option></select><input size="100" type="text" value="">
+		<button>ADD Question</button>
 		 </h2>
 		</td>
 	</tr>
