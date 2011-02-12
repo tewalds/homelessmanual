@@ -19,6 +19,7 @@ function viewprofile($data, $user){
 	$u = $db->pquery("SELECT * FROM users WHERE userid = ?", $data['id'])->fetchrow();
 
 	if($u){
+		$userid = $u['userid'];
 		$email = $u['email'];
 		$name = $u['name'];
 		$organization = $u['organization'];
