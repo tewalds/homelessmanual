@@ -7,7 +7,7 @@
 	</tr>
 <? foreach($categories as $category){ ?>
 	<tr>
-		<td width="70%"><a href="/viewcategory?id=<?= $category['id'] ?>"><?= $categories['title'] ?></a></td>
+		<td width="70%"><a href="/viewcategory?id=<?= $category['id'] ?>"><?= $category['title'] ?></a></td>
 	</tr>
 <? } ?>
 </table>
