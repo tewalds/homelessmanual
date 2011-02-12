@@ -34,6 +34,8 @@ $router->add("POST","/resetpassword", "account.php", "resetpassword", 'anon',  a
 
 $router->add("GET", "/listprofiles",  "profile.php", "listprofiles",  'any',   null);
 $router->add("GET", "/viewprofile",   "profile.php", "viewprofile",   'any',   array("id" => "int"));
+$router->add("GET", "/editprofile",   "profile.php", "editprofile",   'user',  null);
+$router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  array("name" => "string", "organization" => "string", "bio" => "string"));
 
 
 $route = $router->route();
