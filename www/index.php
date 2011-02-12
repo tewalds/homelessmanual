@@ -20,6 +20,7 @@ $router->add("GET", "/info", "home.php", "info", 'any',  null);
 $router->addprefix("GET", "/static/", "static.php", "staticcontent", 'any', null);
 $router->addprefix("GET", "/images/", "static.php", "staticimages", 'any', null);
 
+$router->add("GET", "/login",  "account.php", "login",  'anon',  array("email" => "string", "password" => "string", "longsession" => "bool"));
 $router->add("POST","/login",  "account.php", "login",  'anon',  array("email" => "string", "password" => "string", "longsession" => "bool"));
 $router->add("GET", "/logout", "account.php", "logout", 'user',  null);
 

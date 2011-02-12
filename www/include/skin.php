@@ -10,12 +10,13 @@ function skin($user, $body){
 	$menu = array();
 	$menu["Home"] = "/";
 	$menu["Users"] = "/listprofiles";
-	$menu["Login"] = "/login";
 
 	if($user->userid){
 		$menu["My Profile"] = "/viewprofile?id=" . $user->userid;
 		$menu["Edit Profile"] = "/editprofile";
 		$menu["Logout"] = "/logout";
+	}else{
+		$menu["Login"] = "/login";
 	}
 
 	include("templates/skin.php");
