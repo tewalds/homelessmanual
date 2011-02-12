@@ -1,5 +1,18 @@
 <?
 
+function gravurl($email){
+	return "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?&s=160"; //d=" . urlencode( $default ) . "	
+}
+
+function listprofiles($data, $user){
+	global $db;
+
+	$users = $db->pquery("SELECT * FROM users ORDER BY name")->fetchrowset();
+
+	include("templates/listprofiles.php");
+	return true;
+}
+
 function viewprofile($data, $user){
 	global $db;
 
@@ -11,8 +24,6 @@ function viewprofile($data, $user){
 		$organization = $u['organization'];
 		$bio = $u['bio'];
 
-		$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?&s=160"; //d=" . urlencode( $default ) . "
-
 		$steps = $db->pquery("SELECT DISTINCT stephist.stepid, stephist.title, categories.id as catid, categories.title as catname FROM stephist, categories WHERE stephist.category = categories.id && userid = ?", $data['id'])->fetchrowset();
 
 		include("templates/viewprofile.php");
@@ -21,5 +32,9 @@ function viewprofile($data, $user){
 	}
 
 	return true;
+}
+
+function editprofile($data, $user){
+
 }
 
