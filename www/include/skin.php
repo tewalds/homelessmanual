@@ -9,6 +9,7 @@ function skin($user, $body){
 
 	$menu = array();
 	$menu["Home"] = "/";
+	$menu["Users"] = "/listprofiles";
 
 	if($user->userid)
 		$menu["Logout"] = "/logout";
