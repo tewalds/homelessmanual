@@ -27,8 +27,8 @@ function createuser($data, $user){
 
 	if($email && strlen($password) >=5){
 		$activatekey = randkey();
-		$res = $db->pquery("INSERT INTO users SET email = ?, password = ?, active = 0, activatekey = ?, apikey = ?",
-			$email, md5($password), $activatekey, randkey());
+		$res = $db->pquery("INSERT INTO users SET email = ?, password = ?, active = 0, activatekey = ?",
+			$email, md5($password), $activatekey);
 
 		if(!$res){
 			?>A user with this email already exists, either <a href="/">Login</a> or try <a href="/lostpass">password recovery</a>.<?
