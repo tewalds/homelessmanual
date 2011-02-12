@@ -10,6 +10,7 @@ function skin($user, $body){
 	$menu = array();
 	$menu["Home"] = "/";
 	$menu["Users"] = "/listprofiles";
+	$menu["Login"] = "/login";
 
 	if($user->userid){
 		$menu["My Profile"] = "/viewprofile?id=" . $user->userid;
