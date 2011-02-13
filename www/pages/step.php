@@ -19,21 +19,55 @@ function viewstep($data, $user){
 	return true;
 }
 
-//start of editstep function
+function newstep($data, $user){
+	global $db;
 
-function editstep($data, $user) {
-
-$db->pquery("UPDATE questions SET title = ?, date = ?, category = ?, lastmodifiedid = ? WHERE id = ?", $data['title'], time(), $data['category'], $user->userid, $data['id']);
-
-
-return true;
-
+	$categories = $db->query("SELECT id,title FROM categories ORDER BY title")->fetchfieldset();
+	$category = 0;
+	$title = "";
+	include("templates/newstep.php");
+	return true;
 }
 
-function newstep($data, $user) {
 
-	$db->pquery("INSERT INTO steps SET title = ?, date = ?, category = ?, creatorid = ?, lastmodifiedid = ?", $data['title'], time(), $data['category'], $user['id']); 
+function createstep($data, $user) {
+	global $db;
 
-	redirect("/editstep");
+	if($data['title'] && $data['category']){
+		$id = $db->pquery("INSERT INTO steps SET title = ?, category = ?, userid = ?, edittime = ?", $data['title'], $data['category'], $user->userid, time())->insertid(); 
+		redirect("/editstep?id=$id");
+		return false;
+	}else{
+		echo "Incomplete data";
+		$category = $data['category'];
+		$title = $data['title'];
+		include("templates/newstep.php");
+		return true;
+	}
+}
+
+function editstep($data, $user){
+	global $db;
+
+	$step = $db->pquery("SELECT * FROM steps WHERE id = ?", $data['id'])->fetchrow();
+
+	if($step){
+		$substeps = $db->pquery("SELECT steps.* FROM steps, steporder WHERE steporder.substepid = steps.id && steporder.parentstepid = ? ORDER BY priority", $data['id'])->fetchrowset();
+		$categories = $db->query("SELECT id,title FROM categories ORDER BY title")->fetchfieldset();
+
+		$category = 0;
+		$title = "";
+		include("templates/editstep.php");
+	}else{
+		echo "Invalid step id";
+	}
+	return true;
+}
+
+
+function updatestep($data, $user) {
+	$db->pquery("UPDATE questions SET title = ?, date = ?, category = ?, lastmodifiedid = ? WHERE id = ?", $data['title'], time(), $data['category'], $user->userid, $data['id']);
+
+	return true;
 }
 
