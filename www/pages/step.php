@@ -9,7 +9,8 @@ function viewstep($data, $user){
 
 	if($step){
 		$substeps = $db->pquery("SELECT steps.* FROM steps, steporder WHERE steporder.substepid = steps.id && steporder.parentstepid = ? ORDER BY priority", $data['id'])->fetchrowset();
-		$discussion = $db->pquery("SELECT discussion.*, users.name as username, users.email FROM discussion, users WHERE discussion.userid = users.userid && discussion.stepid = ?", $data['id'])->fetchrowset();
+
+		$db->pquery("UPDATE steps SET views = views + 1 WHERE id = ?", $step['id']);
 
 		include("templates/viewstep.php");
 	}else{
@@ -53,6 +54,7 @@ function editstep($data, $user){
 	$step = $db->pquery("SELECT * FROM steps WHERE id = ?", $data['id'])->fetchrow();
 
 	if($step){
+		$discussion = $db->pquery("SELECT discussion.*, users.name as username, users.email FROM discussion, users WHERE discussion.userid = users.userid && discussion.stepid = ?", $data['id'])->fetchrowset();
 		$substeps = $db->pquery("SELECT steps.* FROM steps, steporder WHERE steporder.substepid = steps.id && steporder.parentstepid = ? ORDER BY priority", $data['id'])->fetchrowset();
 		$categories = $db->query("SELECT id,title FROM categories ORDER BY title")->fetchfieldset();
 

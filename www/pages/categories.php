@@ -3,7 +3,7 @@
 function listcategories($data, $user){
 	global $db;
 
-	$categories = $db->query("SELECT id, title FROM categories ORDER BY title")->fetchrowset();
+	$categories = $db->query("SELECT id, title FROM categories ORDER BY views DESC")->fetchrowset();
 	include("templates/listcategories.php");
 	return true;
 }
@@ -31,7 +31,7 @@ function searchsteps($data, $user){
 	if(!$s && $data['term'])
 		$s = $data['term'];
 
-	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? LIMIT 20", "%$s%")->fetchrowset();
+	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? ORDER BY views DESC LIMIT 20", "%$s%")->fetchrowset();
 
 	if($data['ajax']){
 		foreach($steps as $step)
