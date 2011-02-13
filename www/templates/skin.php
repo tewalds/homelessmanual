@@ -9,9 +9,9 @@
 	<script type="text/javascript" src="/static/basic.js"></script>
 
 <!-- Autocomplete -->
-  <script src="/static/js/jquery-1.4.4.min.js"></script>
-  <script src="/static/js/jquery-ui-1.8.9.custom.min.js"></script>
-  <link rel="stylesheet" href="/static/css/ui-lightness/jquery-ui-1.8.9.custom.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
+    <script src="http://view.jquery.com/trunk/plugins/autocomplete/jquery.autocomplete.js"></script>
+  <link rel="stylesheet" href="http://view.jquery.com/trunk/plugins/autocomplete/jquery.autocomplete.css" type="text/css" />
 <!-- END Autocomplete -->
 
 </head>

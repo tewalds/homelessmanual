@@ -15,13 +15,19 @@
 			$( "#log" ).attr( "scrollTop", 0 );
 		}
 
-		$( "#askquestion" ).autocomplete({
-			source: "/searchsteps?ajax=1",
-			minLength: 1,
-			select: function( event, ui ) {
-				log( ui.item ?
-					"Selected: " + ui.item.value + " aka " + ui.item.id :
-					"Nothing selected, input was " + this.value );
+
+		$( "#askquestion" ).autocomplete("/searchsteps?ajax=1",
+		{
+			formatItem: function(data, i, n, value) {
+				console.log(arguments);
+				var match = value.match(/^(\d+)\s(.*)$/);
+				var id = match[1];
+				return match[2];
+			},
+			formatResult: function(data, value) {
+				var match = value.match(/^(\d+)\s(.*)$/);
+				var id = match[1];
+				return match[2];
 			}
 		});
 	});
