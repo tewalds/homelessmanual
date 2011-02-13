@@ -44,3 +44,5 @@ $QuestionTitle = "a bank account";
 		<td>Discussion around the current question<td>usename</td><td>date</td>
 	</tr>
 </table>
+
+<? redirect("/editstep") ?>
