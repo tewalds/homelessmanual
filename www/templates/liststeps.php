@@ -1,4 +1,6 @@
 
+<h2>Search for <?= $s ?></h2>
+
 <table border="0" width="100%">
 <? foreach($steps as $step){ ?>
 	<tr>

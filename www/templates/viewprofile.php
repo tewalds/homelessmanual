@@ -9,28 +9,23 @@
 <?php
 	if($user->userid == $userid){
 ?>
-	<tr><td><a href="/editprofile"></a></td></tr>
+	<tr><td><a href="/editprofile">Edit Profile</a></td></tr>
 
 <?php } ?>
 
 
-	<tr>
-	
-	
+	<tr valign="top">
 		<td width="160">
 		<img src="<?= gravurl($email, 160) ?>" alt="" />
 		
 		</td>
 		<td width="100%">
-		<span class="profile-name"><?= $name ?></span><br>
-		<span class="profile-company"><?= $organization ?></span>
+		<h2><?= $name ?></h2>
+		<h2>Organization: <?= $organization ?></h2>
+		<span class="profile-bio"><?= $bio?></span>
 		
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">
-			<span class="profile-bio"><?= $bio?></span>
-		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
