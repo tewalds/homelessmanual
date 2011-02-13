@@ -8,6 +8,10 @@ function redirect($loc){
 	exit;
 }
 
+function gravurl($email){
+	return "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?&s=160"; //d=" . urlencode( $default ) . "	
+}
+
 function make_select_list( $list, $sel = "" ){
 	$str = "";
 	foreach($list as $k => $v){

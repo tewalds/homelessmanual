@@ -1,9 +1,5 @@
 <?
 
-function gravurl($email){
-	return "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?&s=160"; //d=" . urlencode( $default ) . "	
-}
-
 function listprofiles($data, $user){
 	global $db;
 
