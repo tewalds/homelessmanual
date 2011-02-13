@@ -70,7 +70,6 @@ foreach($menu as $name => $link)
 <!-- end page -->
 <!-- start footer -->
 <div id="footer">
-	<p id="legal">( c ) 2008. All Rights Reserved. <a href="http://www.freecsstemplates.org/">Bestfriends</a> designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
 </div>
 <!-- end footer -->
 </body>
