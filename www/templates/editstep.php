@@ -1,45 +1,39 @@
 <script>
  	
-$(function() {  
-  $('.error').hide();  
-  $(".button").click(function() {  
-    // validate and process form here  
-  
-    $('.error').hide();  
-      var name = $("input#title").val();  
-        if (name == "") {  
-      $("label#title_error").show();  
-      $("input#title").focus();  
-      return false;  
-    }  
-	var dataString = 'name='+ title + '&email=' + category;  
-	alert (dataString);return false;  
+$(function() {
+	$('.error').hide();
+	$(".button").click(function() {
+		// validate and process form here  
 
-	$.ajax({  
-	  type: "POST",  
-	  url: "/updatestep.php",  
-	  data: dataString,  
-	  success: function() {  
-	      alert("submitted");
-	    });  
-	  }  
-	});  
-	return false;    
-  });  
-});  
+		$('.error').hide();  
+		var stepid = $("input#stepid").val();
+		var title = $("input#title").val();  
+		var category = $("select#category").val();
+		var dataString = 'id=' + stepid + '&title='+ title + '&category=' + category;  
+//		alert (dataString);return false;  
+
+		$.ajax({  
+			type: "POST",  
+			url: "/updatestep",
+			data: dataString,
+			success: function() {
+//				alert("submitted");
+			}
+		});
+		return false;
+	});
+});
 </script>
 
 <table border="0" width="100%">
 	<tr>
-		<td colspan="2">
-		 <h2>Edit your question:</h2>
-		 <form name="namecat">
-		 <input size="30" type="text" name="title" value="<?= htmlentities($step['title']) ?>">
-		 <select name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $step['category']) ?></select>
-		<br>
-		<input type="submit" class="button" value="Update Step">
-		</form>
+		<form name="namecat">
+		<td colspan="3">
+			<h2>Edit your question:</h2>
+			<input type="hidden" id="stepid" name="stepid" value="<?= $step['id'] ?>">
+			<input size="40" type="text" id="title" name="title" value="<?= htmlentities($step['title']) ?>"><select id="category" name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $step['category']) ?></select><input type="submit" class="button" value="Update Step">
 		</td>
+		</form>
 	</tr>
 <?	$count = 1;
 	foreach($substeps as $substep){ ?>
