@@ -93,7 +93,7 @@ function answer($data, $user) {
 
 	$unanswered = $db->pquery("SELECT steps.id, title, category FROM steps LEFT JOIN steporder ON steps.id=steporder.parentstepid WHERE steporder.parentstepid IS NULL ORDER BY steps.category")->fetchfieldset();
 	
-	$categories = $db->query("SELECT id,title FROM categories ORDER BY title")->fetchfieldset(); 
+	$categories = $db->query("SELECT category FROM steps LEFT JOIN steporder ON steps.id=steporder.parentstepid WHERE steporder.parentstepid IS NULL ORDER BY steps.category")->fetchrow(); 
 	
 	include("templates/answer.php");
 	
