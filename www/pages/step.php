@@ -99,3 +99,4 @@ function answer($data, $user) {
 	
 	return true;
 }
+

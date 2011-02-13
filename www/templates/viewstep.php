@@ -1,15 +1,15 @@
 
-<a href="/editstep?id=<?= $step['id'] ?>">Edit Step</a>
 
 <table border="0" width="100%">
 	<tr>
 		<td colspan="2">
+		<h2>Question:</h2>
 		 <h2><?= $step['catname'] ?>: <?= $step['title'] ?></h2>
 		</td>
 	</tr>
 	<tr>
 		<th width="150"></th>
-		<th width="70%"><b>Steps:</b></th>
+		<th width="70%"><b>Answer:</b></th>
 	</tr>
 <?
 	$count = 1;
@@ -18,3 +18,7 @@
 <? 		$count++;
 	} ?>
 </table>
+
+
+
+<a href="/editstep?id=<?= $step['id'] ?>">Edit Question</a>
