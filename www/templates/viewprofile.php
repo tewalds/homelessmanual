@@ -17,7 +17,7 @@
 	
 	
 		<td width="160">
-		<img src="<?= gravurl($email) ?>" alt="" />
+		<img src="<?= gravurl($email, 160) ?>" alt="" />
 		
 		</td>
 		<td width="100%">
