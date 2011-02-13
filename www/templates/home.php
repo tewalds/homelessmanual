@@ -3,7 +3,18 @@
 
 <h2>Ask a question</h2>
 
-<input type="text" style="font-size:30px; width:80%;"><button sytle="font-size:30px;">Ask</button>
+
+  <script>
+  $(document).ready(function(){
+	$("#askquestion").autocomplete("asktypeahead.php", {
+		width: 260,
+		selectFirst: false
+	});
+  });
+  </script>
+
+
+<input id="#askquestion" type="text" style="font-size:30px; width:80%;"><button sytle="font-size:30px;">Ask</button>
 
 <h2>Ask a Browse for a question</h2>
 
