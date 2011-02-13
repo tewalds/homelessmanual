@@ -5,10 +5,23 @@
 		 <h1><?= $category['title'] ?></h1>
 		</td>
 	</tr>
+	
+	
+	<h2>Top Questions</h2>
 <? foreach($steps as $step){ ?>
 	<tr>
 		<td width="70%"><a href="/viewstep?id=<?= $step['id'] ?>"><?= $step['title'] ?></a></td>
 	</tr>
 <? } ?>
+
+
+	<h2>Unanswered Questions</h2>
+<? foreach($steps as $step){ ?>
+	<tr>
+		<td width="70%"><a href="/viewstep?id=<?= $step['id'] ?>"><?= $step['title'] ?></a></td>
+	</tr>
+<? } ?>
+
+
 </table>
 

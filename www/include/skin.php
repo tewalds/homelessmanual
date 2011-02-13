@@ -9,9 +9,9 @@ function skin($user, $body){
 
 	$menu = array();
 	$menu["Home"] = "/";
-	$menu["Users"] = "/listprofiles";
 	$menu["Ask A Question"] = "/ask";
 	$menu["Answer Questions"] = "/answer";
+	$menu["Users"] = "/listprofiles";
 
 	if($user->userid){
 		$menu["My Profile"] = "/viewprofile?id=" . $user->userid;
