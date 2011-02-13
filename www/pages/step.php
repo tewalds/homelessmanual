@@ -68,7 +68,7 @@ function editstep($data, $user){
 function updatestep($data, $user) {
 	global $db;
 
-	$db->pquery("UPDATE questions SET title = ?, date = ?, category = ?, lastmodifiedid = ? WHERE id = ?", $data['title'], time(), $data['category'], $user->userid, $data['id']);
+	$db->pquery("UPDATE steps SET title = ?, category = ?, userid = ?, edittime = ?  WHERE id = ?", $data['title'], $data['category'], $user->userid, time(), $data['id']);
 
 	return true;
 }
