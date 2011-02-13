@@ -99,13 +99,13 @@ input, textarea, select {
 #menu {
 	float: left;
 	width: 880px;
-	height: 58px;
-	background: url(images/img02.jpg) repeat-x left top;
+	height: 38px;
+	background: url(/images/img02.jpg) repeat-x left top;
 }
 
 #menu ul {
 	margin: 0;
-	padding: 23px 0 0 20px;
+	padding: 13px 0 0 10px;
 	list-style: none;
 	line-height: normal;
 }
@@ -117,8 +117,8 @@ input, textarea, select {
 
 #menu a {
 	display: block;
-	padding: 0 50px;
-	background: url(images/img03.jpg) no-repeat right 50%;
+	padding: 0 20px;
+	background: url(/images/img03.jpg) no-repeat right 50%;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 11px;
@@ -207,7 +207,7 @@ input, textarea, select {
 .post h1 {
 	width: 520px;
 	padding: 0px 0 0 0px;
-	background: url(images/img08.jpg) no-repeat left top;
+	background: url(/images/img08.jpg) no-repeat left top;
 	font-size: 24px;
 	color: #28313A; 
 }
@@ -285,7 +285,7 @@ input, textarea, select {
 	width: 250px;
 	padding: 8px 0 0 0px;
 	margin-bottom: 10px;
-	background: url(images/img07.jpg) no-repeat left top;
+	background: url(/images/img07.jpg) no-repeat left top;
 	font-size: 20px;
 	color: #28313A; 
 }
@@ -377,7 +377,7 @@ html>body #footer {
 	width: 25%;
 	height: 100px;
 	border: 1px solid black;
-	line-height: 100px;
+	line-height: 20px;
 	text-align: center;
 	
 }
