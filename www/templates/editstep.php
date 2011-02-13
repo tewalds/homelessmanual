@@ -23,6 +23,15 @@ $(function() {
 		return false;
 	});
 });
+
+    function addStep()
+    {
+        var clone = $("#steptemplate").clone();
+        $(clone).insertAfter("#steptemplate");
+
+        $("#steptemplate input").attr("name", 2);
+    }
+
 </script>
 
 <table border="0" width="100%">
@@ -35,6 +44,12 @@ $(function() {
 		</td>
 		</form>
 	</tr>
+	<tr id="steptemplate" style="display:none">
+		<td><?= $count ?>.</td>
+		<td><input size="50" type="text" name="title" value=""></td>
+		<td></td>
+	</tr>
+
 <?	$count = 1;
 	foreach($substeps as $substep){ ?>
 	<tr>
@@ -53,7 +68,7 @@ $(function() {
 			</form>
 		</td>
 	</tr>
-	<tr><td colspan="2"><button>add step</button></td></tr>
+	<tr><td colspan="2"><button onclick="addStep()">add step</button></td></tr>
 </table>
 
 
