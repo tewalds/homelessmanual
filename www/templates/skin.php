@@ -36,35 +36,9 @@ foreach($menu as $name => $link)
 </div>
 <!-- start page -->
 <div id="page">
-	<!-- start content -->
 	<div id="content">
 <?= $body ?>
 	</div>
-	<!-- end content -->
-	<!-- start sidebar -->
-	<div id="sidebar">
-		<ul>
-<?
-	if($user->userid == 0){
-		echo "<li>";
-		include("templates/loginform.php");
-		echo "</li><li>";
-		include("templates/createuser.php");
-		echo "</li>";
-	}
-?>
-			<li id="search">
-				<h2>Search</h2>
-				<form method="get" action="">
-					<fieldset>
-					<input type="text" id="s" name="s" value="" />
-					<input type="submit" id="x" value="Search" />
-					</fieldset>
-				</form>
-			</li>
-		</ul>
-	</div>
-	<!-- end sidebar -->
 	<div style="clear: both;">&nbsp;</div>
 </div>
 <!-- end page -->
