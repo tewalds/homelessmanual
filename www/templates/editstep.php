@@ -26,7 +26,7 @@ $(function() {
 
     function addStep()
     {
-        var clone = $("#steptemplate").clone();
+        var clone = $("#steptemplate").clone().show();
         $(clone).insertAfter("#steptemplate");
 
         $("#steptemplate input").attr("name", 2);
