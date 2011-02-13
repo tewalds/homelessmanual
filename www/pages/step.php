@@ -64,6 +64,7 @@ function editstep($data, $user){
 	}else{
 		echo "Invalid step id";
 	}
+	
 	return true;
 }
 
@@ -82,7 +83,7 @@ function discussion($data, $user) {
 
 	$db->pquery("INSERT INTO discussion SET stepid = ?, userid = ?, time = ?, comment = ?", $data['stepid'], $user->userid, time(), $data['comment']);
 	
-	redirect("/viewstep?id=$data[stepid]");
+	redirect("/editstep?id=$data[stepid]");
 	
 	return false;
 }
