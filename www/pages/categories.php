@@ -25,9 +25,13 @@ function viewcategory($data, $user){
 function searchsteps($data, $user){
 	global $db;
 
-	$like = '%' . $data['q'] . '%';
+	$s = $data['q'];
+	if(!$s && $data['s'])
+		$s = $data['s'];
+	if(!$s && $data['term'])
+		$s = $data['term'];
 
-	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? LIMIT 20", $like)->fetchrowset();
+	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? LIMIT 20", "%$s%")->fetchrowset();
 
 	if($data['ajax']){
 		foreach($steps as $step)

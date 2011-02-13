@@ -195,8 +195,7 @@ input, textarea, select {
 
 #content {
 	float: left;
-	width: 620px;
-	border-right: 1px dashed #DFE1E0;
+	width: 870px;
 }
 
 /* Post */

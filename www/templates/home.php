@@ -16,7 +16,7 @@
 		}
 
 		$( "#askquestion" ).autocomplete({
-			source: "asktypeahead.php",
+			source: "/searchsteps?ajax=1",
 			minLength: 1,
 			select: function( event, ui ) {
 				log( ui.item ?
@@ -31,19 +31,20 @@
 <div id="log"></div>
 
 
-<input id="askquestion" type="text" style="font-size:30px; width:80%;"><button sytle="font-size:30px;">Ask</button>
+<form method="get" action="/searchsteps">
+<input id="askquestion" type="text" style="font-size:30px; width:80%;" name="q">
+<input style="font-size:30px;" type=submit value="Ask">
+</form>
 
-<h2>Ask a Browse for a question</h2>
+<h2>Browse for a question</h2>
 
 <table class="cattable">
-	<tr>
-		<td><a href="/viewcategory?id=5">Food</a></td><td><a href="/viewcategory?id=2">Shelter</a></td><td><a href="/viewcategory?id=3">Health/Medical/Drugs</a></td><td><a href="/viewcategory?id=">Money</a></td>
-	</tr>
-	<tr>
-		<td><a href="/viewcategory?id=">Security</a></td><td><a href="/viewcategory?id=1">Jobs/Finance</a></td><td><a href="/viewcategory?id=4">Clothing</a></td><td><a href="/viewcategory?id=">Literacy</a></td>
-	</tr>
-	<tr>
-		<td><a href="/identification?id=6">Security</a></td><td><a href="/viewcategory?id=7">Transportation</a></td><td><a href="/viewcategory?id=8">Community Support</a></td><td><a href="/viewcategory?id=9">Education</a></td>
-	</tr>
-
+<?
+	$count = 0;
+	foreach($categories as $id => $title){
+		if($count % 4 == 0) echo "<tr>";
+	?><td><a href="/viewcategory?id=<?= $id ?>"><?= $title ?></a></td><?
+		if($count++ % 4 == 3) echo "</tr>";
+	}
+?>
 </table>
