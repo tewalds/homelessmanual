@@ -17,6 +17,7 @@
 <? 		$count++;
 	} ?>
 </table>
+<? if($user->userid){ ?>
 <br><br>
 <table border="0" width="100%">
 	<tr>
@@ -45,4 +46,4 @@
 		</td>
 	</tr>
 </table>
-
+<? } ?>
