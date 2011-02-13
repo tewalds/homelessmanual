@@ -3,10 +3,11 @@
 $filetypes = array(
 	".html" => "text/html",
 	".css"  => "text/css",
-	".js"   => "text/js",
+	".js"   => "application/js",
 	".png"  => "image/png",
 	".jpeg" => "image/jpeg",
 	".jpg"  => "image/jpg",
+	".gif"  => "image/gif",
 );
 
 
