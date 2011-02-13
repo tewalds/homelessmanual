@@ -3,7 +3,15 @@
 function listprofiles($data, $user){
 	global $db;
 
-	$users = $db->pquery("SELECT * FROM users ORDER BY name")->fetchrowset();
+	$s = "";
+	if(!$s && $data['q']) $s = $data['q'];
+	if(!$s && $data['s']) $s = $data['s'];
+	if(!$s && $data['term']) $s = $data['term'];
+
+	if($s)
+		$users = $db->pquery("SELECT * FROM users WHERE name LIKE ? ORDER BY name", "%$s%")->fetchrowset();
+	else
+		$users = $db->pquery("SELECT * FROM users ORDER BY name")->fetchrowset();
 
 	include("templates/listprofiles.php");
 	return true;

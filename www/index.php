@@ -33,7 +33,7 @@ $router->add("POST","/lostpassword",  "account.php", "lostpassword",  'anon',  a
 $router->add("GET", "/resetpassword", "account.php", "resetpassword", 'anon',  array("email" => "string", "key" => "string", "newpass" => "string"));
 $router->add("POST","/resetpassword", "account.php", "resetpassword", 'anon',  array("email" => "string", "key" => "string", "newpass" => "string"));
 
-$router->add("GET", "/listprofiles",  "profile.php", "listprofiles",  'any',   null);
+$router->add("GET", "/listprofiles",  "profile.php", "listprofiles",  'any',   array("q" => "string", "term" => "string", "s" => "string"));
 $router->add("GET", "/viewprofile",   "profile.php", "viewprofile",   'any',   array("id" => "int"));
 $router->add("GET", "/editprofile",   "profile.php", "editprofile",   'user',  null);
 $router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  array("name" => "string", "organization" => "string", "bio" => "string"));

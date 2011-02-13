@@ -1,5 +1,9 @@
 
-Search for Profile: <input type="text">
+Search for Profile:
+<form method="get" action="/listprofiles">
+<input type="text" name="q">
+<input type="submit" value="Search">
+</form>
 <!-- searches based on username/organization/ -->
 
 <h2>Results</h2>
