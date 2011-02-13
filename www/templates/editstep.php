@@ -43,6 +43,16 @@ $(function() {
 		<td><select name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $substep['category']) ?></select></td>
 	</tr>
 <?	$count++; } ?>
+
+	<tr>
+		<td>
+			Addstep: 
+			<form action="/editstep">
+				<input type="text" name="substep">
+				<button>add step</button>
+			</form>
+		</td>
+	</tr>
 	<tr><td colspan="2"><button>add step</button></td></tr>
 </table>
 

@@ -43,7 +43,7 @@
 	$count = 0;
 	foreach($categories as $id => $title){
 		if($count % 4 == 0) echo "<tr>";
-	?><td><a href="/viewcategory?id=<?= $id ?>"><img src="/images/catphotos/<?= $id ?>.jpg"><?= $title ?></a></td><?
+	?><td><a href="/viewcategory?id=<?= $id ?>"><img border="0" src="/images/catphotos/<?= $id ?>.jpg"><?= $title ?></a></td><?
 		if($count++ % 4 == 3) echo "</tr>";
 	}
 ?>

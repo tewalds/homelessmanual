@@ -3,8 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?= $config['site_name'] ?></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<meta name="keywords" content="Edmonton, Homeless, Affordable Housing" />
+	<meta name="description" content="A guide for homeless and affordable housing." />
 	<link href="/static/default.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/static/basic.js"></script>
 
@@ -19,7 +19,7 @@
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="#"><img src="/images/helpinglogo.png"></a></h1>
+	<a href="/"><img src="/images/helpinglogo.png"></a>
 </div>
 <div id="header">
 	<div id="menu">
