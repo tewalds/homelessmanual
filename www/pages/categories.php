@@ -3,7 +3,7 @@
 function listcategories($data, $user){
 	global $db;
 
-	$categories = $db->query("SELECT id, title FROM categories ORDER BY views DESC")->fetchrowset();
+	$categories = $db->query("SELECT id, title FROM categories")->fetchrowset();
 	include("templates/listcategories.php");
 	return true;
 }
@@ -14,7 +14,7 @@ function viewcategory($data, $user){
 	$category = $db->pquery("SELECT * FROM categories WHERE id = ?", $data['id'])->fetchrow();
 	
 	if($category){
-		$steps = $db->pquery("SELECT id, title FROM steps WHERE category = ?", $data['id'])->fetchrowset();
+		$steps = $db->pquery("SELECT id, title FROM steps WHERE category = ? ORDER BY `views`", $data['id'])->fetchrowset();
 		include("templates/viewcategory.php");
 	}else{
 		echo "Invalid category";
@@ -31,7 +31,7 @@ function searchsteps($data, $user){
 	if(!$s && $data['term'])
 		$s = $data['term'];
 
-	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? ORDER BY views DESC LIMIT 20", "%$s%")->fetchrowset();
+	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? ORDER BY `views` DESC LIMIT 20", "%$s%")->fetchrowset();
 
 	if($data['ajax']){
 		foreach($steps as $step)
