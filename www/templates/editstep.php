@@ -45,7 +45,7 @@ $(function() {
 		</form>
 	</tr>
 	<tr id="steptemplate" style="display:none">
-		<td><?= $count ?>.</td>
+		<td></td>
 		<td><input size="50" type="text" name="title" value=""></td>
 		<td></td>
 	</tr>
@@ -59,15 +59,6 @@ $(function() {
 	</tr>
 <?	$count++; } ?>
 
-	<tr>
-		<td>
-			Addstep: 
-			<form action="/editstep">
-				<input type="text" name="substep">
-				<button>add step</button>
-			</form>
-		</td>
-	</tr>
 	<tr><td colspan="2"><button onclick="addStep()">add step</button></td></tr>
 </table>
 
