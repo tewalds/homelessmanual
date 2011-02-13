@@ -22,3 +22,21 @@ function viewcategory($data, $user){
 	return true;
 }
 
+function searchsteps($data, $user){
+	global $db;
+
+	$like = '%' . $data['q'] . '%';
+
+	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? LIMIT 20", $like)->fetchrowset();
+
+	if($data['ajax']){
+		foreach($steps as $step)
+			echo "$step[id] $step[title]\n";
+		return false;
+	}else{
+		include("templates/liststeps.php");
+		return true;
+	}
+}
+
+
