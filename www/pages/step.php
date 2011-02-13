@@ -35,6 +35,7 @@ function createstep($data, $user) {
 
 	if($data['title'] && $data['category']){
 		$id = $db->pquery("INSERT INTO steps SET title = ?, category = ?, userid = ?, edittime = ?", $data['title'], $data['category'], $user->userid, time())->insertid(); 
+		$db->pquery("INSERT INTO stephist SET stepid = ?, title = ?, category = ?, userid = ?, edittime = ?", $id, $data['title'], $data['category'], $user->userid, time())->insertid(); 
 		redirect("/editstep?id=$id");
 		return false;
 	}else{
@@ -69,6 +70,7 @@ function updatestep($data, $user) {
 	global $db;
 
 	$db->pquery("UPDATE steps SET title = ?, category = ?, userid = ?, edittime = ?  WHERE id = ?", $data['title'], $data['category'], $user->userid, time(), $data['id']);
+	$db->pquery("INSERT INTO stephist SET stepid = ?, title = ?, category = ?, userid = ?, edittime = ?", $data['id'], $data['title'], $data['category'], $user->userid, time()); 
 
 	return true;
 }
