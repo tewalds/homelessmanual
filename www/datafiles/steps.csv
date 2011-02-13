@@ -1,0 +1,129 @@
+93, get an Alberta Health Card?,Question,7
+76, get a Birth Certificate?,Question,7
+86, get a Social Insurance Number/Card,Question,7
+99, get an Alberta ID Card?,Question,7
+219,What do I do if I lose my ID?,Question,7
+51,Do you have Proof of Residency?,Question,7
+40,Do you have Government Issued ID?,Question,7
+46,Do you have Legal Entitlement to be in Canada?,Question,7
+179,Have you completed the AHC application form?,Attachment,7
+175,Have you applied for an Alberta Health Card?,Attachment,7
+181,Have you contacted Alberta Health for more information?,Statement,7
+18,Are you eligible to apply for a Birth Certificate?,Attachment,7
+20,Do you have a Birth Certificate application form?,Attachment,7
+203,Have you submitted the application?,Statement,7
+183,Have you contacted Service Alberta for more information?,Statement,7
+56,Do you have the necessary Primary documents to apply for a SIN card?,Statement,7
+62,Do you have the necessary Supporting Documents to apply for a SIN card?,Question,7
+170,Have you applied at a Service Canada location?,Statement,7
+173,Have you applied for a SIN card by mail?,Statement,7
+185,Have you contacted Service Canada for more information?,Statement,7
+58,Do you have the necessary Primary documents to apply for an Alberta ID card?,Statement,7
+60,Do you have the necessary Secondary documents to apply for an Alberta ID card?,Statement,7
+177,Have you applied in person for an Alberta ID card?,Statement,7
+229,What do I do if my IDs are stolen?,Statement,7
+169, go to find out more about recovering IDs?,Statement,7
+187,Have you lost your Alberta Driver's License or ID?,Statement,7
+189,Have you lost your Alberta Health Care Card?,Statement,7
+191,Have you lost your Birth Certificate?,Statement,7
+193,Have you lost your Citizenship Certificate or Permanent Resident Card?,Statement,7
+195,Have you lost your Credit or Debit Cards?,Statement,7
+199,Have you lost your Passport?,Statement,7
+201,Have you lost your Social Insurance Number (SIN) Card?,Statement,7
+197,Have you lost your Edmonton Public Library Card?,Statement,7
+141,get groceries,Question,9
+143,get groceries from  Mustard Seed,Location,9
+142,get groceries from  Bissell Centre,Location,9
+144,get groceries from Edmonton Food Bank,Location,9
+145,get groceries from Salvation Army,Location,9
+146,get groceries from Wecan Food Baskert Society,URL,9
+147,get hot meals,Question,9
+155,get hot meals from People's Church,Location,9
+153,get hot meals from Marian Centre ,Location,9
+148,get hot meals from Bissell Centre ,Location,9
+151,get hot meals from Herb Jamieson Centre,Location,9
+158,get hot meals from Unity Centre of Northeast Edmonton,Location,9
+157,get hot meals from Senior Citizens Opportunity Neighborhood Association,Location,9
+154,get hot meals from Mustard Seed,Location,9
+150,get hot meals from Dickensfield Amity,Location,9
+159,get hot meals from Women's Emergency Accomodation Shelter,Location,9
+152,get hot meals from Hope Mission,Location,9
+149,get hot meals from Boyle Street Community League,Location,9
+156,get hot meals from Salvation Army,Location,9
+212, wash clothing ,Question,11
+103, get clothes,Question,11
+104, get clothes for a job interview,Question,11
+160, get infant/children's clothes,Question,11
+168, get women's clothes,Question,11
+163, get men's clothes,Question,11
+68, donate clothing,Question,11
+207,How can I donate clothing,Question,11
+130, get clothes from SALVATION ARMY,Location,11
+123, get clothes from MARS & VENUS,Location,11
+138,  get clothes fromFAST EXCHANGE,Location,11
+139, get clothes fromSUPER EXCHANGE,Location,11
+112, get clothes from CATCH THE MAGIC,Location,11
+126, get clothes from ON SECOND THOUGHT,Location,11
+105, get clothes from BEACON THRIFT STORE,Location,11
+110, get clothes from CAPRICE CONSIGNMENT,Location,11
+117, get clothes from J P SURPLUS & EXCHANGE,Location,11
+118, get clothes from KARA-LOT SEC HND STORE,Location,11
+135, get clothes from SNAGGS CONSIGNED & NEW DESIGNER FASHIONS,Location,11
+128, get clothes from PIGTAILS,Location,11
+114, get clothes from DELS ON 9TH,Location,11
+133, get clothes from SECOND LOOK,Location,11
+134, get clothes from SECOND STORY,Location,11
+108, get clothes from BOY GIRL REWEAR,Location,11
+136, get clothes from UNIQUE BOUTIQUE,Location,11
+124, get clothes from MY FAVORITE AUNTS,Location,11
+121, get clothes from KIDS STUFF ETC LTD,Location,11
+125, get clothes from NORTHSIDE EXCHANGE,Location,11
+109, get clothes from BUGSNBERRIES KIDSWEAR,Location,11
+115, get clothes from ELEGANCE PLUS BOUTIQUE,Location,11
+106, get clothes from BISSELLS THRIFT SHOPPE,Location,11
+120, get clothes from KIDS KLOTHES PLUS MORE,Location,11
+122, get clothes from LIL PEANUTS RECYCLED WEAR,Location,11
+116, get clothes from FAIR VALUE LOAN CENTRE PAWN BROKR,Location,11
+113, get clothes from CHANGES THE CLASSY CONSIGNMENT COMPANY,Location,11
+137, get clothes from VESPUCCI CONSIGNMENT INC SEC HND STORE,Location,11
+127, get clothes from PAWN STORE,Location,11
+129, get clothes from ROBES & RELICS,Location,11
+119, get clothes from KIDS CLOSET,Location,11
+162,Get Medical Help,Location,5
+164,Get needles exchanged,Location,5
+167,Get welfare application,Location,9
+1, apply for the CRHC Subsidy Program,Statement,1
+80, get a Criminal Record Check,Statement,7
+231,What is acceptable ID for a Criminal Record Check,Statement,7
+213,What are the housing options available,Statement,1
+210, stay at Herb Jamieson Center,Statement,1
+209, stay at George Spady Center,Statement,1
+74, find housing for refugees,Location,1
+232,What is subsidized housing,Question,1
+234,What subsidies are available for housing,Question,1
+73, find a shelter,Question,1
+233,What is the contact information for housing services and shelters ,Question,1
+208,How to negotiate with landlord,Question,1
+165, get tenant information,Question,1
+140, get furnishings,Question,1
+161,Get Information on local Community groups,Question,4
+71,Find a library,Question,4
+85,get a library card,Question,7
+70,find a directory of organizations,Question,4
+72,find a list of community events,statement,4
+92,get a transit pass,question,2
+166,get transit tickets,question,2
+235,Where can I go to find out more about recovering IDs?,Question,12
+29,Do you have a Driver's License/ID Card?,Question,12
+38,Do you have a Utility Bill?,Question,12
+26,Do you have a Canadian passport?,Question,12
+24,Do you have a Canadian citizenship card?,Question,12
+30,Do you have a Federal identification card?,Question,12
+28,"Do you have a current Alberta, provincial or territorial driver’s licence?",Question,12
+23,Do you have a Canadian birth certificate?,Question,12
+22,Do you have a Canada entry document?,Question,12
+27,"Do you have a Certificate of marriage, record of solemnization of marriage or marriage statement?",Question,12
+31,Do you have a Legal change-of-name certificate or court order document?,Question,12
+39,Do you have an Adoption Order?,Question,12
+32,Do you have a Notarial certificate?,Question,12
+35,Do you have a Request to Amend Record of Landing?,Question,12
