@@ -376,8 +376,9 @@ html>body #footer {
 .cattable td{
 	width: 25%;
 	height: 100px;
-	border: 1px solid black;
 	line-height: 20px;
 	text-align: center;
+	padding-bottom: 20px;
+	font-weight: bold;
 	
 }
