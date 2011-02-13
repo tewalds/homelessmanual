@@ -9,12 +9,9 @@
 	<script type="text/javascript" src="/static/basic.js"></script>
 
 <!-- Autocomplete -->
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <link rel="stylesheet" href="http://dev.jquery.com/view/trunk/plugins/autocomplete/demo/main.css" type="text/css" />
-  <link rel="stylesheet" href="http://dev.jquery.com/view/trunk/plugins/autocomplete/jquery.autocomplete.css" type="text/css" />
-  <script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/autocomplete/lib/jquery.bgiframe.min.js"></script>
-  <script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/autocomplete/lib/jquery.dimensions.js"></script>
-  <script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/autocomplete/jquery.autocomplete.js"></script>
+  <script src="/static/js/jquery-1.4.4.min.js"></script>
+  <script src="/static/js/jquery-ui-1.8.9.custom.min.js"></script>
+  <link rel="stylesheet" href="/static/css/ui-lightness/jquery-ui-1.8.9.custom.css" type="text/css" />
 <!-- END Autocomplete -->
 
 </head>
