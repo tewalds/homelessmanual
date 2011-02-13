@@ -3,7 +3,7 @@
 function listcategories($data, $user){
 	global $db;
 
-	$categories = $db->query("SELECT id, title FROM categories")->fetchrowset();
+	$categories = $db->query("SELECT id, title FROM categories ORDER BY title")->fetchrowset();
 	include("templates/listcategories.php");
 	return true;
 }
