@@ -38,10 +38,12 @@ a {
 a:hover, a:active {
 	text-decoration: none;
 	color: #1B75A9;
+	border: none;
 }
 
 a:visited {
 	color: #1B75A9;
+	border: none;
 }
 
 img {
