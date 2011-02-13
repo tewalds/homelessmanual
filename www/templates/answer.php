@@ -9,12 +9,12 @@
 	<tr>
 		<td width="70%"><a href="/viewcategory?id=<?= $category['id'] ?>"><?= $category['title'] ?></a></td>
 	</tr>
-	<? foreach() { ?>
+	<? foreach($unanswered as $answer) { ?>
 	<tr>
-	 	<td><a href="">Question Title</a></td>
+	 	<? if($answer['category'] == $category) { ?>
+	 		<td><a href=""><? $answer['title'] ?></a></td>
+	 	<? } ?>
 	</tr>
-	<!-- end repeat for each question in this category -->
-	
 <? } ?>
 </table>
 
