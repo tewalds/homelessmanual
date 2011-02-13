@@ -9,7 +9,7 @@
 	</tr>
 	<tr>
 		<th width="150"></th>
-		<th width="70%"><b>Answer:</b></th>
+		<? if(!empty($substeps)) { ?><th width="70%"><b>Answer:</b></th><? } ?>
 	</tr>
 <?
 	$count = 1;
@@ -17,8 +17,13 @@
 			<tr><td>[+]</td><td><?= $count ?>.<a href="/viewstep?id=<?= $substep['id'] ?>">Do you have a <?= $substep['title'] ?></a></td><td><input type="checkbox" alt=""></td></tr>
 <? 		$count++;
 	} ?>
+	
 </table>
 
+<? if(empty($substeps)) { ?>
 
+	<p>Unfortunately we do not have an answer for this question, if you would like to add one, click 
+	<a href="/editstep?id=<?= $step['id'] ?>">here.</a>
+	</p>
+	<? } ?>
 
-<a href="/editstep?id=<?= $step['id'] ?>">Edit Question</a>
