@@ -7,7 +7,7 @@
 		 <input size="30" type="text" name="title" value="<?= htmlentities($title) ?>">
 		 <select name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $category) ?></select>
 		<br>
-		<input type="submit" value="Create Step">
+		<input type="submit" value="Create Question">
 		</form>
 		</td>
 	</tr>
