@@ -7,7 +7,10 @@
 		 
 		 <select><option>How do I get</option><option>Where do I find</option><option>Who do I contact to</option></select><input size="100" type="text" value=""><br>
 		 
-		 Category: <select><option>Categories</option></select>
+		 Category: <select> <? foreach($category as $row) { ?>
+		 						 <option value="row['id']"><?= $row['title'] ?></option>
+		 					}
+		 		   </select>
 
 
 <br>

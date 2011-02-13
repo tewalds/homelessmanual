@@ -4,7 +4,18 @@
 		 <h2>Profile Page</h2>
 		</td>
 	</tr>
+	
+<?php
+	if($user->userid == $userid){
+?>
+	<tr><td><a href="/editprofile"></a></td></tr>
+
+<?php } ?>
+
+
 	<tr>
+	
+	
 		<td width="160">
 		<img src="<?= gravurl($email) ?>" alt="" />
 		
