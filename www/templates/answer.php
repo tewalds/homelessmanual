@@ -5,16 +5,17 @@
 		 <h2>Answer a Question</h2>
 		</td>
 	</tr>
-<? foreach($categories as $category){ ?>
+<? foreach($categories as $catid => $cattitle){ ?>
 	<tr>
-		<td width="70%"><a href="/viewcategory?id=<?= $category['id'] ?>"><?= $category['title'] ?></a></td>
+		<td width="70%"><a href="/viewcategory?id=<?= $catid ?>"><?= $cattitle ?></a></td>
 	</tr>
-	<? foreach() { ?>
+	<? foreach($unanswered as $answer) { ?>
 	<tr>
-	 	<td><a href="">Question Title</a></td>
+	 	<? if($answer['category'] == $catid) { ?>
+	 		<td><a href="/viewstep?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td>
+	 	<? } ?>
 	</tr>
-	<!-- end repeat for each question in this category -->
-	
+	<? } ?>
 <? } ?>
 </table>
 
