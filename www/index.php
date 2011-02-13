@@ -48,7 +48,7 @@ $router->add("POST","/updatestep",     "step.php",    "updatestep",   'user',  a
 
 $router->add("GET", "/listcategories", "categories.php", "listcategories", 'any', null);
 $router->add("GET", "/viewcategory",   "categories.php", "viewcategory",   'any', array("id" => "int"));
-$router->add("GET", "/searchsteps",    "categories.php", "searchsteps",    'any', array("q" => "string", "ajax" => "bool"));
+$router->add("GET", "/searchsteps",    "categories.php", "searchsteps",    'any', array("q" => "string", "term" => "string", "s" => "string", "ajax" => "bool"));
 
 
 $route = $router->route();
