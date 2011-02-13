@@ -88,3 +88,11 @@ function discussion($data, $user) {
 	return false;
 }
 
+function answerquestion($data, $user) {
+	global $db;
+
+	$unanswered = $db->pquery("SELECT ");
+
+	return true;
+}
+

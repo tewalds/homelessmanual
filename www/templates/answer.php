@@ -9,7 +9,7 @@
 	<tr>
 		<td width="70%"><a href="/viewcategory?id=<?= $category['id'] ?>"><?= $category['title'] ?></a></td>
 	</tr>
-	<!-- repeat for each question in this category -->
+	<? foreach() { ?>
 	<tr>
 	 	<td><a href="">Question Title</a></td>
 	</tr>
