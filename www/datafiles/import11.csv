@@ -1,0 +1,434 @@
+Question,Category ID,Description,Step Type,Step,Step #
+ get an Alberta Health Card?,7,,Question,Do you have Proof of Residency?,1
+ get an Alberta Health Card?,7,,Question,Do you have Government Issued ID?,2
+ get an Alberta Health Card?,7,,Question,Do you have Legal Entitlement to be in Canada?,3
+ get an Alberta Health Card?,7,,Question,Have you completed the AHC application form?,4
+ get an Alberta Health Card?,7,,Question,Have you applied for an Alberta Health Card?,5
+ get an Alberta Health Card?,7,,Question,Have you contacted Alberta Health for more information?,6
+ get a Birth Certificate?,7,,Question,Are you eligible to apply for a Birth Certificate?,1
+ get a Birth Certificate?,7,,Question,Do you have a Birth Certificate application form?,2
+ get a Birth Certificate?,7,,Question,Have you submitted the application?,3
+ get a Birth Certificate?,7,,Question,Have you contacted Service Alberta for more information?,4
+ get a Social Insurance Number/Card,7,,Question,Do you have the necessary Primary documents to apply for a SIN card?,1
+ get a Social Insurance Number/Card,7,,Question,Do you have the necessary Supporting Documents to apply for a SIN card?,2
+ get a Social Insurance Number/Card,7,,Question,Do you have a Social Insurance Number application form?,3
+ get a Social Insurance Number/Card,7,,Question,Have you applied at a Service Canada location?,4
+ get a Social Insurance Number/Card,7,,Question,Have you applied for a SIN card by mail?,5
+ get a Social Insurance Number/Card,7,,Question,Have you contacted Service Canada for more information?,6
+ get an Alberta ID Card?,7,,Question,Do you have the necessary Primary documents to apply for an Alberta ID card?,1
+ get an Alberta ID Card?,7,,Question,Do you have the necessary Secondary documents to apply for an Alberta ID card?,2
+ get an Alberta ID Card?,7,,Question,Do you have Proof of Residency?,3
+ get an Alberta ID Card?,7,,Question,Have you applied in person for an Alberta ID card?,4
+What do I do if I lose my ID?,7,,Question,What do I do if my IDs are stolen?,1
+What do I do if I lose my ID?,7,,Question,Where can I go to find out more about recovering IDs?,2
+What do I do if I lose my ID?,7,,Question,Have you lost your Alberta Driver's License or ID?,3
+What do I do if I lose my ID?,7,,Question,Have you lost your Alberta Health Care Card?,4
+What do I do if I lose my ID?,7,,Question,Have you lost your Birth Certificate?,5
+What do I do if I lose my ID?,7,,Question,Have you lost your Citizenship Certificate or Permanent Resident Card?,6
+What do I do if I lose my ID?,7,,Question,Have you lost your Credit or Debit Cards?,7
+What do I do if I lose my ID?,7,,Question,Have you lost your Passport?,8
+What do I do if I lose my ID?,7,,Question,Have you lost your Social Insurance Number (SIN) Card?,9
+What do I do if I lose my ID?,7,,Question,Have you lost your Edmonton Public Library Card?,10
+Do you have Proof of Residency?,7,,Question,Do you have a Driver's License/ID Card?,
+Do you have Proof of Residency?,7,,Question,Do you have a Utility Bill?,
+Do you have Government Issued ID?,7,,Question,Do you have a Canadian passport?,
+Do you have Government Issued ID?,7,,Question,Do you have a Canadian citizenship card?,
+Do you have Government Issued ID?,7,,Question,Do you have a Permanent Resident Card?,
+Do you have Government Issued ID?,7,,Question,Do you have a Federal identification card?,
+Do you have Government Issued ID?,7,,Question,"Do you have a current Alberta, provincial or territorial driver’s licence?",
+Do you have Legal Entitlement to be in Canada?,7,,Question,Do you have a Canadian citizenship card?,
+Do you have Legal Entitlement to be in Canada?,7,,Question,Do you have a Canadian birth certificate?,
+Do you have Legal Entitlement to be in Canada?,7,,Question,Do you have a Permanent Resident Card?,
+Do you have Legal Entitlement to be in Canada?,7,,Question,Do you have a Canada entry document?,
+Have you completed the AHC application form?,7,,Attachment,http://www.health.alberta.ca/documents/AHCIP-form-AHC0102.pdf,
+Have you applied for an Alberta Health Card?,7,,Attachment,http://www.health.alberta.ca/documents/AHCIP-Registry-Agent-poster.pdf,
+Have you contacted Alberta Health for more information?,7,,Statement,"PHONE
+780-427-1432 (Edmonton)
+EMAIL
+health.ahcipmail@gov.ab.ca.
+MAIL
+Alberta Health & Wellness
+Attention: Alberta Health Care Insurance Plan
+PO Box 1360, Station Main
+Edmonton, AB
+T5J 2N3
+INTERNET
+http://www.health.alberta.ca/AHCIP/Q-how-to-register.html",
+Are you eligible to apply for a Birth Certificate?,7,,Attachment,http://www.servicealberta.gov.ab.ca/pdf/Forms/REG3023_pg2.pdf,
+Do you have a Birth Certificate application form?,7,,Attachment,http://www.servicealberta.gov.ab.ca/pdf/vs/REG3023.pdf,
+Have you submitted the application?,7,,Statement,You must apply through the Registry Agent Network,
+Have you submitted the application?,7,,URL,"LOCATION SEARCH TOOL
+http://www.servicealberta.gov.ab.ca/1641.cfm
+",
+Have you submitted the application?,7,,URL,"GOOGLE MAPS VIEW
+http://www.programs.alberta.ca/Contacts/Map.aspx?id=3277",
+Have you contacted Service Alberta for more information?,7,,Statement,"Phone
+780-427-7013
+EMAIL
+service.alberta@gov.ab.ca
+INTERNET
+http://www.servicealberta.gov.ab.ca/785.cfm",
+Do you have the necessary Primary documents to apply for a SIN card?,7,,Statement,"Service Canada requires some form of PRIMARY ID. Any of the following can be used:
+
+CITIZENS
+Certificate of Birth or Birth Certificate
+Certificate of Canadian Citizenship
+Certificate of Registration of Birth Abroad
+
+REGISTERED INDIANS
+If you are a registered Indian and you want to register your status on your SIN record, submit one of the following:
+if you were born in Canada, you must submit your original primary document (see section on Canadian Citizens) and a Certificate of Indian Status issued by Indian and Northern Affairs Canada (INAC).
+if you were born outside Canada, you must submit your original foreign birth certificate and a Certificate of Indian Status issued by INAC.
+
+PERMANENT RESIDENT
+Permanent Resident Card
+Confirmation of Permanent Residence AND visa counterfoil affixed to a foreign passport or a travel document
+Record of Landing
+
+VISITOR
+Work permit
+Study permit",
+Do you have the necessary Supporting Documents to apply for a SIN card?,7,,Question,"Do you have a Certificate of marriage, record of solemnization of marriage or marriage statement?",
+Do you have the necessary Supporting Documents to apply for a SIN card?,7,,Question,Do you have a Legal change-of-name certificate or court order document?,
+Do you have the necessary Supporting Documents to apply for a SIN card?,7,,Question,Do you have an Adoption Order?,
+Do you have the necessary Supporting Documents to apply for a SIN card?,7,,Question,Do you have a Notarial certificate?,
+Do you have the necessary Supporting Documents to apply for a SIN card?,7,,Question,Do you have a Request to Amend Record of Landing?,
+Do you have a Social Insurance Number application form?,7,,URL,http://www.servicecanada.gc.ca/cgi-bin/search/eforms/index.cgi?app=prfl&frm=nas2120&ln=eng,
+Have you applied at a Service Canada location?,7,,Statement,"Service Canada has made it easy for you to apply for a Social Insurance Number (SIN), to replace your card, or to amend your SIN record. Simply gather the documents you need and take them to your nearest Service Canada Centre. If your application and documents are in order, you will get a Social Insurance Number in one visit and receive your card within 10 business days.
+",
+Have you applied at a Service Canada location?,7,,URL,"LOCATION SEARCH TOOL
+http://www.servicecanada.gc.ca/cgi-bin/hr-search.cgi?app=hme&ln=eng",
+Have you applied for a SIN card by mail?,7,,Statement,"If you need to apply by mail, please follow these steps:
+Download an application form from our Web site, or order the form by phone at 1‑800‑206‑7218. Select Option ""3"".
+Send us your completed application, original documents and payment, if required, to:
+
+Service Canada
+Social Insurance Registration Office
+PO Box 7000
+Bathurst NB  E2A 4T1
+
+If you send your application by registered mail, we will return your documents and SIN card in the same way. We are not responsible for documents lost in the mail.
+If your SIN application meets the requirements, you will receive your SIN card by mail within 20 business days from the date we receive the application.
+",
+Have you contacted Service Canada for more information?,7,,Statement,"Telephone
+1-800-206-7218 (select option ""3"").
+Mail
+Service Canada
+Social Insurance Registration Office
+PO Box 7000
+Bathurst NB  E2A 4T1",
+Do you have the necessary Primary documents to apply for an Alberta ID card?,7,,Statement,"Photo documents must contain your legal name and date of birth. Some examples of primary photo identification are (this is not an all inclusive list):
+Alberta operator's licence or identification card 
+Photo driver's licence (from another jurisdiction) ",
+Do you have the necessary Secondary documents to apply for an Alberta ID card?,7,,Statement,"Support documents that contain two data elements such as name, date of birth, signature, address, etc. At least one of these documents must show that you live in Alberta and have a residence here. Some examples of support documents are (this is not an all inclusive list):  
+
+Birth or Marriage Certificate (original or certified)
+Credit, Debit or Account Card  (must contain 2 data elements)
+Work Visa, Student Visa, Permanent Resident Card",
+Do you have Proof of Residency?,7,,Statement,"In order to obtain an Alberta driver’s licence or identification card, you must provide proof (i.e. Canadian birth certificate, Permanent Resident Card, Citizenship Card, Canadian Passport, Work Visa, Student Visa) that you are lawfully entitled to reside in Canada and proof (letter from Alberta based employer, utility bills with your name and Alberta address) that you are an Alberta resident.",
+Have you applied in person for an Alberta ID card?,7,,Statement,"Registry offices
+http://www.health.alberta.ca/documents/AHCIP-Registry-Agent-poster.pdf
+Search for offices
+http://www.servicealberta.gov.ab.ca/1641.cfm
+Google Maps
+http://www.programs.alberta.ca/Contacts/Map.aspx?id=3277",
+What do I do if my IDs are stolen?,7,,Statement,"*If your identification or other personal property has been stolen, contact the  
+Edmonton Police Service at 780-423-4567.*",
+ go to find out more about recovering IDs?,7,,Statement,"Go to a Photo ID Project Clinic
+
+If you have lost your ID and are unable to replace it due to financial constraints or lack of appropriate 
+documentation, you can visit one of four weekly ID clinics in Edmonton. You will be required to sign a
+Statutory Declaration of Identity. Your ID will include your photo, signature, date of birth, height, weight, 
+etc. These IDs are accepted by various social services (including AISH) and the Edmonton Police 
+Service.  
+Clinics are held at: 
+• Bissell Centre – 10530 96 Street (780-423-2285) – Every Thurs. 9:00 a.m. – 12:00 p.m. 
+(only location offering IDs during the summer months) 
+• Boyle Street Community Services – 10116 105 Avenue (780-424-4106) 
+• Jasper Place Health & Wellness Centre – 15210 Stony Plain Road (780-481-4001) 
+• Operation Friendship (55+ years of age) – 9526 106 Avenue (780-429-2626)  
+For further information, contact any of the participating agencies",
+Have you lost your Alberta Driver's License or ID?,7,,Statement,"If your licence has been lost, stolen, or destroyed, you may apply for a replacement by visiting a 
+Registry Agent in person. You will be required to prove your identity through a strict identity 
+confirmation process (you will need to provide photo and support documentation). You will receive an 
+interim licence, valid for 30 days. Your new card will arrive in the mail within two weeks of your 
+application date. Replacement cards should cost no more than $21.00 (as of April 2008). 
+Phone: 780-427-7013 (Service Alberta) 
+General Information: http://www.servicealberta.ca/Drivers_Licence.cfm  
+List of Registry Agents: http://www.servicealberta.ca/617.cfm  ",
+Have you lost your Alberta Health Care Card?,7,,Statement,"A replacement personal health card can be requested by telephone, in writing or in person: 
+1. If you order by telephone, a replacement card is generally received within 2–3 weeks.  
+2. A written request can be mailed or faxed to Alberta Health and Wellness. Due to the volume of 
+mail received daily, a replacement card is generally received within 4–6 weeks.  
+3. If you live in Edmonton or Calgary, requests can also be made in person and a new card 
+provided to you before you leave the office. 2 
+In all cases you will be required to provide your full name, mailing address, telephone number and 
+personal health number. If you do not know your personal health number, you will also need to provide 
+your date of birth. For security reasons, you may be asked by a client services agent for proof of 
+identity when you request a replacement card by telephone or in person. 
+Phone: 780-427-1432 
+In-Person: 10025 Jasper Avenue (Telus Tower North, main floor) – Mon. to Fri.: 8:15 a.m  to 4:30 p.m. 
+Web: http://www.health.alberta.ca/ahcip/ahcip_card.html  ",
+Have you lost your Birth Certificate?,7,,Statement,"If you have lost your Alberta Birth Certificate, visit a Registry Agent to obtain a new one. Replacement 
+certificates cost $20 plus a Registry Agent service fee.  
+Phone: 780-427-7013 (Service Alberta) 
+General Information: http://www.servicealberta.ca/785.cfm  
+Application for Certificate: http://www.servicealberta.ca/pdf/vs/REG3023.pdf  
+List of Registry Agents: http://www.servicealberta.ca/617.cfm",
+Have you lost your Citizenship Certificate or Permanent Resident Card?,7,,Statement,"If you have lost either of these two items, contact Citizenship and Immigration Canada at 
+1 888 242-2100",
+Have you lost your Credit or Debit Cards?,7,,Statement,"If your credit and/or debit cards have been lost or stolen, you should report the loss immediately to the 
+appropriate agency. Your credit card or bank statements will tell you who to contact if your card is lost 
+or stolen. A survey list of “Lost or Stolen Card” phone numbers are included below (please note: this is 
+not a comprehensive list): 
+Credit Cards
+American Express: 1-800-668-2639 
+MasterCard: 1-800-622-7747 
+Visa: 1-800-847-2911 
+Debit Cards 
+ATB Financial: 1-800-332-8383  
+Bank of Montreal: 1-877-225-5266
+CIBC: 1-800-465-2422 
+Royal Bank: 1-800-769-2555 
+Scotiabank: 1-800-472-6842 
+Servus Credit Union: 780-496-2000 
+TD Canada Trust: 1-866-222-3456 ",
+Have you lost your Passport?,7,,Statement,"If your passport is lost, you must report the circumstances of the loss or theft to the Edmonton Police 
+Service (780-423-4567) and Passport Canada. The request for a replacement passport can be made at 
+any Passport Canada office. However, before the document can be replaced, Canadian authorities will 
+conduct an investigation into the circumstances. This may lead to delays in processing the replacement
+passport. 
+A replacement passport (which may be valid for a limited period only) may be authorized, provided 
+strict requirements are met. These include the submission of: 
+1. A completed application form signed by your guarantor 
+2. Two identical passport photos 
+3. The appropriate fee 
+4. Documentary proof of Canadian citizenship 
+5. A “Statutory Declaration concerning a lost, stolen, damaged, destroyed or inaccessible 
+Canadian passport” if the passport is still valid. 
+Phone: 1-800-567-6868 
+General Information (including links to application forms): 
+http://www.pptc.gc.ca/planification/203.aspx?lang=eng ",
+Have you lost your Social Insurance Number (SIN) Card?,7,,Statement,"To replace your SIN card, visit any Service Canada centre. You need to provide a primary document to 
+apply for a Social Insurance Number (SIN), replace your card or amend your SIN record (e.g. a name 
+change). There is a $10 charge to replace a SIN card. 
+In-Person: 
+Canada Place (Main Floor)   Meadowlark Shopping Centre, Suite 120 
+9700 Jasper Avenue    15710 87
+th
+ Avenue 
+Northgate Centre, Unit 2000  Argyll Centre  
+9499 137th Avenue   6325 Gateway Boulevard 
+Phone: 1-800-622-6232 
+General Information: http://www.servicecanada.gc.ca/en/sin/apply/how.shtml  ",
+Have you lost your Edmonton Public Library Card?,7,,Statement,"Report your lost or stolen card to library staff calling (780-496-7000) or visiting any EPL location. 
+Replacement cards are free of charge",
+get groceries,9,,,,
+get groceries from  Mustard Seed,9,,Location,"15641 - 96 Avenue Edmonton, Alberta",
+get groceries from  Bissell Centre,9,,Location,"15641 - 96 Avenue Edmonton, Alberta",
+get groceries from Edmonton Food Bank,9,,Location,"11508 120 Street Edmonton, Alberta",
+get groceries from Salvation Army,9,,Location,"9620 101A Avenue Edmonton, Alberta",
+get groceries from Wecan Food Baskert Society,9,,URL,http://www.wecanfood.com/location.html,
+get hot meals,9,,,,
+get hot meals from People's Church,9,,Location,"15641 - 96 Avenue Edmonton, Alberta",
+get hot meals from Marian Centre ,9,,Location,"10528 98 St. Edmonton, Alberta",
+get hot meals from Bissell Centre ,9,,Location,"10527 97th Street Edmonton, Alberta",
+get hot meals from Herb Jamieson Centre,9,,Location,"10014 105A Avenue Edmonton, Alberta",
+get hot meals from Unity Centre of Northeast Edmonton,9,,Location,"101 - 14530 72 Street Edmonton, Alberta",
+get hot meals from Senior Citizens Opportunity Neighborhood Association,9,,Location,"10831 University Avenue Edmonton, Alberta",
+get hot meals from Mustard Seed,9,,Location,"10635 - 96 Street Edmonton, Alberta",
+get hot meals from Dickensfield Amity,9,,Location,"9213 - 146 Street Edmonton, Alberta",
+get hot meals from Women's Emergency Accomodation Shelter,9,,Location,"9611 101A Avenue Edmonton, Alberta",
+get hot meals from Hope Mission,9,,Location,"9908 106th Avenue Edmonton, Alberta",
+get hot meals from Boyle Street Community League,9,,Location,"9515 104th Avenue Edmonton, Alberta",
+get hot meals from Salvation Army,9,,Location,"9620 101A Avenue Edmonton, Alberta",
+ wash clothing ,11,,,,
+ get clothes,11,,,,
+ get clothes for a job interview,11,,,,
+ get infant/children's clothes,11,,,,
+ get women's clothes,11,,,,
+ get men's clothes,11,,,,
+ donate clothing,11,,,,
+How can I donate clothing,11,,,,
+ get clothes from SALVATION ARMY,11,,Location,,
+ get clothes from MARS & VENUS,11,,Location,,
+  get clothes fromFAST EXCHANGE,11,,Location,,
+ get clothes fromSUPER EXCHANGE,11,,Location,,
+ donate clothing,11,,Location,,
+ get clothes from CATCH THE MAGIC,11,,Location,,
+ get clothes from ON SECOND THOUGHT,11,,Location,,
+ get clothes from BEACON THRIFT STORE,11,,Location,,
+ get clothes from CAPRICE CONSIGNMENT,11,,Location,,
+ get clothes from CAPRICE CONSIGNMENT,11,,Location,,
+ get clothes from J P SURPLUS & EXCHANGE,11,,Location,,
+ get clothes from KARA-LOT SEC HND STORE,11,,Location,,
+ get clothes from SNAGGS CONSIGNED & NEW DESIGNER FASHIONS,11,,Location,,
+ get clothes from PIGTAILS,11,,Location,,
+ get clothes from DELS ON 9TH,11,,Location,,
+ get clothes from SECOND LOOK,11,,Location,,
+ get clothes from SECOND STORY,11,Suit Yourself clothes,Location,"Suit Yourself is an Edmonton-based charitable organization which collects and distributes quality clothing and accessories, free of charge, to low-income women who are seeking employment or making a transition in the workforce.",
+ get clothes from BOY GIRL REWEAR,11,,Location,It is our policy to offer all clients who obtain employment a second appointment so that they may receive more clothing to wear at their new job. We hope that this will encourage clients to maintain employment.,
+ get clothes from UNIQUE BOUTIQUE,11,,Location,,
+ get clothes from MY FAVORITE AUNTS,11,Bissel Centre Thrift Shoppe ,Location," The Community Closet is a voucher-based system assisting low income families and individuals by providing basic essentials of clothing and household goods at no charge. This program, originally offered at the Bissell Centre Thrift Shoppe, is located in the basement of Bissell Centre’s East building. The Community Closet has proven to be very successful as service users now have their own place to ‘shop’ with dignity assisted by dedicated support staff. 
+
+",
+ get clothes from KIDS STUFF ETC LTD,11,,Location,,
+ get clothes from NORTHSIDE EXCHANGE,11,Marian Centre ,Location,Once a week the clothing room is opened so that clothes and small household items can be made available to our friends,
+ get clothes from BUGSNBERRIES KIDSWEAR,11,,Location,,
+ get clothes from ELEGANCE PLUS BOUTIQUE,11,The Mustard Seed,Location,"The Personal Assistance Centre is based on the belief that everyone is equal and should be given the opportunity to present themselves in a dignified manner. We give members of our community this opportunity by providing clean clothes and basic hygiene items, as well as some household goods. Our intake workers also work to connect people to the support they need—whether emotional, physical or spiritual  (inner city residents only)",
+ get clothes from BISSELLS THRIFT SHOPPE,11,,Location,,
+ get clothes from BISSELLS THRIFT SHOPPE,11,,Location,,
+ get clothes from KIDS KLOTHES PLUS MORE,11,,Location,,
+ get clothes from LIL PEANUTS RECYCLED WEAR,11,,Location,,
+ get clothes from FAIR VALUE LOAN CENTRE PAWN BROKR,11,WIN House - Edmonton Women's Shelter ,Location,"WIN House - Edmonton Women's Shelter is a shelter for women with or without children who have experienced abuse from their partners. They supply food, shelter (up to 3 weeks), clothing, support groups, crisis counselling, and information on family violence.",
+ get clothes from CHANGES THE CLASSY CONSIGNMENT COMPANY,11,,Location,,
+ get clothes from VESPUCCI CONSIGNMENT INC SEC HND STORE,11,Edmonton Emergency Relief Services 428-4422,Location,,
+ get clothes from PAWN STORE,11,Goodwill Industries – Thrift Retail Stores ,Location,"Beverly, Capilano, Duggan, Edwards, Lymburn Centre, Manning Crossing, Pallisades, Parkview, Patricia Heights, Sherwood Park, Southside, Spruce Grove, St. Albert, , Westend, Westmount",
+ get clothes from SALVATION ARMY,11,KARA-LOT Second Hand Store,Location,,
+ get clothes from ROBES & RELICS,11,Salvation Army – Thrift Stores ,Location,,
+ get clothes from SALVATION ARMY,11,,Location,,
+ get clothes from KIDS CLOSET,11,Cerebral Palsy Association in Alberta ,Location,,
+Get Medical Help,5,"The Boyle McCauley Health Center is the only medical clinic in Edmonton that does not require patients to have a Health Care Card, and takes walk-in appointments",Location,"10628 - 96 Street Edmonton, Alberta",
+Get needles exchanged,5,Boyle McCauley Health Center has a Streetworks Needle Exchange program that runs throughout the week and has a van that provides a mobile exchange outreach,Location,"10628 - 96 Street Edmonton, Alberta",
+Get welfare application,9,You may have the right to income assistance. You have the right to be treated with respect at a welfare office,Location,"10242 - 105 Street
+200 13415 Fort Road
+2000 Northgate Centre, 9499 - 137 Avenue 
+Argyll Centre, 6325 Gateway Boulevard
+200 Westcor Building, 12323 Stony Plain Road
+120 Meadowlark Shopping Centre, 15710 - 87 Ave",
+ apply for the CRHC Subsidy Program,1,,Statement,"Obtain Application from:
+http://www.crhc.ab.ca/documents-and-forms/application-forms.aspx
+or
+Capital Region Housing Corporation Office at 10232 - 112 Street Edmonton ",
+ apply for the CRHC Subsidy Program,1,,Statement,Use ink to complete the form,
+ apply for the CRHC Subsidy Program,1,,Statement,All household members 18 year and older are required to pass a Edmonton Police Service Criminal Records Check (to be included with this application),
+ apply for the CRHC Subsidy Program,1,,Statement,Complete the Housing & Subsidy Program Listing - Available from the CRHC Office,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide a copy of your identification,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide a copy of your Permanent Resident Card,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide a copy of your Custody Documents,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide a copy of your Income Tax Returns (T1) and Assessment Notices (T452),
+ apply for the CRHC Subsidy Program,1,,Statement,Provide a copy of your Lease Agreement,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide your current address,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide you phone number,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide you Social Insurance number,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide you employment information,
+ apply for the CRHC Subsidy Program,1,,Statement,Provide you Rental History,
+ apply for the CRHC Subsidy Program,1,,Statement,Complete the remainder of the Application,
+ apply for the CRHC Subsidy Program,1,,Statement,Sign the application form - All co-applicants must sign the application.,
+ apply for the CRHC Subsidy Program,1,,Statement,"Return application to Capital Region Housing Corporation at:
+CRHC Office at 10232 - 112 Street Edmonton ",
+ get a Criminal Record Check,7,,Statement,You must obtain paper copies from your local community station or EPS Headquarters. ,
+ get a Criminal Record Check,7,,Statement,Police Information Check - $30.00,
+ get a Criminal Record Check,7,,Statement,"To request a police information check, you must have two pieces of current original government issued identification showing full name and birth date, one piece must have a photo. No exceptions. ",
+ get a Criminal Record Check,7,,Statement,"Police information checks must be done in person. Applications will not be accepted or processed by phone, fax, email or third party requests.",
+ get a Criminal Record Check,7,,Statement,"Standard processing time is 2 weeks, however, times may vary according to work load. ",
+What is acceptable ID for a Criminal Record Check,7,,Statement,"Identification
+
+Two pieces of current original government issued identification showing full name and date of birth are required. Identification with initials instead of full names is NOT ACCEPTABLE.
+
+One piece must be a photo identification.
+Acceptable Identification:
+
+    * Alberta Motor Registries ID (i.e. Drivers License, Learner's and Identification Card)
+    * Provincial Health Care card must have full name, not initials(Saskatchewan and Alberta Health Care with initials are not acceptable)
+    * CNIB identification card
+    * Birth Certificate
+    * Indian Status card
+    * Passport
+    * Immigration papers
+    * Citizenship card
+    * Permanent Residence card
+    * Possession and Acquisition License
+    * Canadian Forces Identification Card
+
+Unacceptable Identification:
+
+    * Social Insurance card
+    * Interim Driver's License
+    * Edmonton Police Service ID card
+    * Student ID
+    * Credit Cards
+    * City of Edmonton License card
+    * Blue Cross card
+    * Hospital card 
+
+In the case of persons under the age of 14 years and/or over the age of 55 years, Police Information Check Unit personnel will review each case individually in regards to other acceptable identification and will reserve the right to accept or refuse other forms of identification in accordance with its' internal policy and guidelines.
+
+Identification that is expired longer than three months will not be acceptable.
+
+Photocopies of identification are not acceptable.
+Alberta Heath Care Cards
+
+In an effort to accommodate the Alberta Government's Health Information Act, Edmonton Police Service encourages all applicants who are applying for a Police Information Check to provide other pieces of acceptable identification other than the Alberta Health Care Cards.
+
+If no other acceptable identification is available and you, the applicant, choose to use the Alberta Health Care Card as a form of identification, the Edmonton Police Service will view the Alberta Health Care Card for the purpose to confirm identity by checking full name and birth date ONLY.
+
+Personal health care numbers will not be recorded or photocopied by the Edmonton Police Service.",
+What are the housing options available,1,,Statement,Municipal Affairs and Housing 780-427-2732,
+What are the housing options available,1,,Statement,Tenant Rent Supplement Program 780-310-0000 http://www.crhc.ab.ca/,
+What are the housing options available,1,,Statement,Boyle Street Community Services 780-424-4106 http://boylestreet.org/,
+What are the housing options available,1,,Statement,Bissell Centre 780-423-2285 http://www.bissellcentre.org/,
+What are the housing options available,1,,Statement,Herb Jamieson Centre 780-429-3470 http://www.informedmonton.com/public/service/0722_0002_0002.htm,
+What are the housing options available,1,,Statement,George Spady Centre 780-424-8335,
+ stay at Herb Jamieson Center,1,,Statement,"Herb Jamieson Center - Offers short term and emergency dorm style housing to men with little or no resources. Provides for registered guests a nurse's clinic for medical treatment, contact with Social Services intake worker, and baggage storage area.
+Registration: 
+Mon-Fri 2:00pm-3:00pm, 7:00pm-8:30pm; 
+Sat-Sun noon-2:00pm, 6:00pm-8:30pm. 
+Foyer opens at 10:30-11:00pm for warming. 
+Last check in at 2:00am. 
+Clients leave at 8:00am
+Registration required
+No Fees
+Only for men, Low-Income - Transient, indigent, single men - Ages 18-60
+Must be sober (zero tolerance)
+",
+ stay at Herb Jamieson Center,1,,Location,"Herb Jamieson Centre
+10014 105A Avenue
+Edmonton, Alberta
+T5H 0M6
+780-429-3470",
+ stay at George Spady Center,1,,Statement,"George Spady Centre 780-424-8335
+Many program participants are self referred through our Overnight Shelter, however people can be referred by friends, family and agencies.
+In order to enter the Overnight Shelter a person only needs to be under the influence of alcohol or drugs, they can show up at the door or family, friends or agency staff can bring them. In the case of outside referrals it is best to call ahead to ensure space is available
+For all referrals to the Detoxification Unit whether self-referred or referred through an outside party, potential participants must have a minimum of 8 hours sober or clean time. It is best to call ahead to ensure the availability of space.
+Provides a supervised environment for those who are under the influence of alcohol and/or other drugs and require assistance in stabilizing their condition.
+Open 7 days per week, 24 hours per day year round offering basic services to men and women who are under the influence of alcohol and or drugs
+Spaces for 60 men and women 
+Offer showers, laundry services, some food and donated clothing
+Supportive staff, crisis intervention and referral information 
+Onsite needle exchange program",
+ find housing for refugees,1,,Location,"Edmonton Mennonite Center for Newcomers
+#101, 10209 - 97 Street
+Edmonton AB  T5J 0L6
+780-428-5062
+http://www.emcn.ab.ca/Home/tabid/37/Default.aspx",
+ find housing for refugees,1,,Statement,"The Edmonton Mennonite Centre for Newcomers (EMCN) is a community agency that seeks to assist immigrants and refugees coming to the Edmonton area in achieving full participation in the community as well as contributing their experiences and skills to strengthen and enrich the lives of all Canadians.
+EMCN supports refugee residents in specialized housing. The housing is offered in conjunction with the services and supports of a tenants counselor, a youth worker, community liaison/support workers, and psychologists.
+Trinity Manor is an innovative project to provide supported housing for refugees who have been experiencing challenges with integration into life in Edmonton.
+People interested in living in this supported housing will need to apply to EMCN.
+Each application will require references as well as income and asset verification
+EMCN staff will make all final decisions about the acceptance of applications
+- must be a newcomer with less than 3 years living in Canada.
+- not a Canadian Citizen
+- not a Refugee Claimant
+- normally applicants must be residents in Canada for at least 6 months",
+What is subsidized housing,1,,Question,,
+What subsidies are available for housing,1,,Question,,
+ find a shelter,1,,Question,,
+What is the contact information for housing services and shelters ,1,,Question,,
+How to negotiate with landlord,1,,Question,,
+ get tenant information,1,,Question,,
+ get furnishings,1,,Question,,
+Get Information on local Community groups,4,,Question,,
+Find a library,4,,Question,,
+get a library card,7,,Question,,
+find a directory of organizations,4,,Question,,
+find a list of community events,4,,statement,"Edmonton's First Annual: Homeless Hamper Handout at Edmonton Events Center - West Edmonton Mall 
+www.epo-organization.com
+
+Homeless Connect
+Homeless Connect Edmonton is a broad-based community-inspired initiative, providing free appropriate services to people experiencing homelessness and those at risk of becoming homeless, on one day and at one location
+Homeless Connect event will be held Sunday, May 15, 2011
+www.homelessconnect.ca",
+get a transit pass,2,,question,,
+get transit tickets,2,,question,,
