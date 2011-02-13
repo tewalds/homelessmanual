@@ -27,7 +27,7 @@ $(function() {
     function addStep()
     {
         var clone = $("#steptemplate").clone().show();
-        $(clone).insertAfter("#steptemplate");
+        $(clone).insertBefore("#steptemplate");
 
         $("#steptemplate input").attr("name", 2);
     }
@@ -44,20 +44,20 @@ $(function() {
 		</td>
 		</form>
 	</tr>
-	<tr id="steptemplate" style="display:none">
-		<td></td>
-		<td><input size="50" type="text" name="title" value=""></td>
-		<td></td>
-	</tr>
-
 <?	$count = 1;
 	foreach($substeps as $substep){ ?>
-	<tr>
+	<tr class="step">
 		<td><?= $count ?>.</td>
 		<td><input size="50" type="text" name="title[<?= $substep['id'] ?>]" value="<?= $substep['title'] ?>"></td>
 		<td><select name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $substep['category']) ?></select></td>
 	</tr>
 <?	$count++; } ?>
+
+	<tr id="steptemplate" style="display:none">
+		<td></td>
+		<td><input size="50" type="text" name="title" value=""></td>
+		<td><select name="category"><option value="0"> Category</option><?= make_select_list_key($categories) ?></select></td>
+	</tr>
 
 	<tr><td colspan="2"><button onclick="addStep()">add step</button></td></tr>
 </table>
