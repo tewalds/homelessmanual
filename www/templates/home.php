@@ -35,6 +35,7 @@
 <input id="askquestion" type="text" style="font-size:30px; width:80%;" name="q">
 <input style="font-size:30px;" type=submit value="Ask">
 </form>
+<br><br>
 
 <h2>Browse for a question</h2>
 
