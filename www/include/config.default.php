@@ -6,6 +6,6 @@ $config = array(
 	'db_user' => 'homeless',
 	'db_pass' => 'password',
 
-	'site_name' => "Homeless Manual",
+	'site_name' => "Helping Manual",
 );
 
