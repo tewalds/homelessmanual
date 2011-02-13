@@ -88,11 +88,15 @@ function discussion($data, $user) {
 	return false;
 }
 
-function answerquestion($data, $user) {
+function answer($data, $user) {
 	global $db;
 
-	$unanswered = $db->pquery("SELECT ");
-
+	$unanswered = $db->pquery("SELECT steps.id, title, category FROM steps LEFT JOIN steporder ON steps.id=steporder.parentstepid WHERE steporder.parentstepid IS NULL ORDER BY steps.category")->fetchfieldset();
+	
+	$categories = $db->query("SELECT category FROM steps LEFT JOIN steporder ON steps.id=steporder.parentstepid WHERE steporder.parentstepid IS NULL ORDER BY steps.category")->fetchrow(); 
+	
+	include("templates/answer.php");
+	
 	return true;
 }
 
