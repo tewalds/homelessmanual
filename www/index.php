@@ -39,7 +39,7 @@ $router->add("GET", "/editprofile",   "profile.php", "editprofile",   'user',  n
 $router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  array("name" => "string", "organization" => "string", "bio" => "string"));
 
 
-$router->add("GET", "/viewstep",       "step.php",    "viewstep",     'user',  array("id" => "int"));
+$router->add("GET", "/viewstep",       "step.php",    "viewstep",     'any',   array("id" => "int"));
 $router->add("POST","/editstep",       "step.php",    "editstep",     'user',  array("id" => "int"));
 $router->add("POST", "/newstep",       "step.php",    "newstep",      'user',  array("id" => "int", "category" => "int"));
 
