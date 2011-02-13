@@ -46,6 +46,7 @@ $router->add("GET", "/newstep",        "step.php",    "newstep",      'user',  n
 $router->add("POST","/createstep",     "step.php",    "createstep",   'user',  array("title" => "string", "category" => "int"));
 $router->add("POST","/updatestep",     "step.php",    "updatestep",   'user',  array("id" => "int", "title" => "string", "category" => "int"));
 $router->add("GET", "/answer",         "step.php",    "answer",       'user',  null);
+$router->add("GET", "/ask",            "step.php",    "ask",       'any',   null); 
 
 $router->add("GET", "/listcategories", "categories.php", "listcategories", 'any', null);
 $router->add("GET", "/viewcategory",   "categories.php", "viewcategory",   'any', array("id" => "int"));

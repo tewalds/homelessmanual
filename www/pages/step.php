@@ -99,4 +99,13 @@ function answer($data, $user) {
 	
 	return true;
 }
- 
+
+function ask($data, $user) {
+	global $db;
+	
+	include("templates/ask.php");
+	
+	return true;
+}
+
+
