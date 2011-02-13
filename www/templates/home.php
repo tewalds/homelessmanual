@@ -16,7 +16,7 @@
 		}
 
 		$( "#askquestion" ).autocomplete({
-			source: "asktypeahead.php",
+			source: "/searchsteps?ajax=1",
 			minLength: 1,
 			select: function( event, ui ) {
 				log( ui.item ?
@@ -31,7 +31,10 @@
 <div id="log"></div>
 
 
-<input id="askquestion" type="text" style="font-size:30px; width:80%;"><button sytle="font-size:30px;">Ask</button>
+<form method="get" action="/searchsteps">
+<input id="askquestion" type="text" style="font-size:30px; width:80%;" name="q">
+<input style="font-size:30px;" type=submit value="Ask">
+</form>
 
 <h2>Ask a Browse for a question</h2>
 
