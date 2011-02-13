@@ -9,7 +9,7 @@
 <?php
 	if($user->userid == $userid){
 ?>
-	<tr><td><a href="/editprofile"></a></td></tr>
+	<tr><td><a href="/editprofile">Edit Profile</a></td></tr>
 
 <?php } ?>
 
