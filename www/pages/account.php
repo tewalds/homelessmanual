@@ -1,7 +1,7 @@
 <?
 
 function login($data, $user){
-	$user = createsession($data['email'], $data['password'], ($data['longsession'] ? 3600 : 86400*30));
+	$user = createsession($data['email'], $data['password'], ($data['longsession'] ? 86400*30 : 3600));
 
 	if($user->userid)
 		redirect("/");
