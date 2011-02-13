@@ -40,6 +40,7 @@ $router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  a
 
 
 $router->add("GET", "/viewstep",       "step.php",    "viewstep",     'any',   array("id" => "int"));
+$router->add("POST","/discussion",     "step.php",    "discussion",   'user',  array("stepid" => "int", "comment" => "string"));
 $router->add("GET", "/editstep",       "step.php",    "editstep",     'user',  array("id" => "int"));
 $router->add("GET", "/newstep",        "step.php",    "newstep",      'user',  null);
 $router->add("POST","/createstep",     "step.php",    "createstep",   'user',  array("title" => "string", "category" => "int"));

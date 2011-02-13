@@ -66,8 +66,20 @@ function editstep($data, $user){
 
 
 function updatestep($data, $user) {
+	global $db;
+
 	$db->pquery("UPDATE questions SET title = ?, date = ?, category = ?, lastmodifiedid = ? WHERE id = ?", $data['title'], time(), $data['category'], $user->userid, $data['id']);
 
 	return true;
+}
+
+function discussion($data, $user) {
+	global $db;
+
+	$db->pquery("INSERT INTO discussion SET stepid = ?, userid = ?, time = ?, comment = ?", $data['stepid'], $user->userid, time(), $data['comment']);
+	
+	redirect("/viewstep?id=$data[stepid]");
+	
+	return false;
 }
 
