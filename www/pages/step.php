@@ -123,7 +123,7 @@ function discussion($data, $user) {
 function answer($data, $user) {
 	global $db;
 
-	$unanswered = $db->pquery("SELECT steps.id, title, category FROM steps LEFT JOIN steporder ON steps.id=steporder.parentstepid WHERE steporder.parentstepid IS NULL ORDER BY steps.category")->fetchfieldset();
+	$unanswered = $db->pquery("SELECT steps.id, title, category FROM steps LEFT JOIN steporder ON steps.id=steporder.parentstepid WHERE steporder.parentstepid IS NULL ORDER BY steps.category")->fetchrowset();
 	
 	$categories = $categories = $db->query("SELECT id,title FROM categories ORDER BY title")->fetchfieldset();
 	
