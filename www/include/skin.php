@@ -11,7 +11,7 @@ function skin($user, $body){
 	$menu["Home"] = "/";
 	$menu["Ask A Question"] = "/ask";
 	$menu["Answer Questions"] = "/answer";
-	$menu["Add Questions"] = "/newstep";
+	$menu["Add Questions"] = "/newquestion";
 	$menu["Users"] = "/listprofiles";
 
 	if($user->userid){
