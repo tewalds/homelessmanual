@@ -50,7 +50,7 @@
 	</p>
 	<? }else{
 	?>
-	 <a href="/editquestion?id=<?= $step['id'] ?>Edit this question</a>
+	 <a href="/editquestion?id=<?= $step['id'] ?>">Edit this question</a>
 	 <?
 	} 
 	
