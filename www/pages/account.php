@@ -5,8 +5,12 @@ function login($data, $user){
 
 	if($user->userid)
 		redirect("/");
-
+	
+	if($data['email']) {
+	
 	echo "Login failed, try again";
+	
+	}
 
 	$email = $data['email'];
 	$longsession = $data['longsession'];
