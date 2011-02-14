@@ -3,13 +3,18 @@
 function login($data, $user){
 	$user = createsession($data['email'], $data['password'], ($data['longsession'] ? 86400*30 : 86400));
 
-	if($user->userid)
-		redirect("/");
+	if($user->userid){
+		if($data['ref'])
+			redirect($data['ref']);
+		else
+			redirect("/");
+	}
 	
 	if($data['email'])
 		echo "Login failed, try again";
 
 
+	$ref = $data['ref'];
 	$email = $data['email'];
 	$longsession = $data['longsession'];
 	
