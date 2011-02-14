@@ -53,7 +53,7 @@ $(function() {
 			if($substep['type'] == 1){
 				echo "&nbsp;&nbsp;&nbsp;<a href='/editquestion?id=$substep[id]'>$substep[title]</a>";
 			}else{
-				echo "&nbsp;&nbsp;&nbsp;" $substep['detail'];
+				echo "&nbsp;&nbsp;&nbsp;".$substep['detail'];
 			}
 		?>
 		</td>
