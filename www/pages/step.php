@@ -37,7 +37,7 @@ function createquestion($data, $user) {
 	if($data['title'] && $data['category']){
 		$id = $db->pquery("INSERT INTO steps SET type = 1, title = ?, category = ?, userid = ?, edittime = ?", $data['title'], $data['category'], $user->userid, time())->insertid(); 
 		$db->pquery("INSERT INTO stephist SET type = 1, stepid = ?, title = ?, category = ?, userid = ?, edittime = ?", $id, $data['title'], $data['category'], $user->userid, time())->insertid(); 
-		redirect("/editstep?id=$id");
+		redirect("/editquestion?id=$id");
 		return false;
 	}else{
 		echo "Incomplete data";
