@@ -14,7 +14,7 @@ $(function() {
 
 		$.ajax({  
 			type: "POST",  
-			url: "/updatestep",
+			url: "/updatequestion",
 			data: dataString,
 			success: function() {
 //				alert("submitted");
@@ -37,7 +37,7 @@ $(function() {
 <table border="0" width="100%">
 	<tr>
 		<form name="namecat">
-		<td colspan="3">
+		<td>
 			<h2>Edit your question:</h2>
 			<input type="hidden" id="stepid" name="stepid" value="<?= $step['id'] ?>">
 			<input size="40" type="text" id="title" name="title" value="<?= htmlentities($step['title']) ?>"><select id="category" name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $step['category']) ?></select><input type="submit" class="button" value="Update Step">
@@ -46,21 +46,33 @@ $(function() {
 	</tr>
 <?	$count = 1;
 	foreach($substeps as $substep){ ?>
-	<tr class="step">
-		<td><?= $count ?>.</td>
-		<td><input size="50" type="text" name="title[<?= $substep['id'] ?>]" value="<?= $substep['title'] ?>"></td>
-		<td><select name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $substep['category']) ?></select></td>
+	<tr>
+		<td>
+		<?
+			echo "$count.";
+			if($substep['type'] == 1){
+				echo "<a href='/editquestion?id=$substep[id]'>$substep[title]</a>";
+			}else{
+				echo $substep['detail'];
+			}
+		?>
+		</td>
 	</tr>
 <?	$count++; } ?>
-
-	<tr id="steptemplate" style="display:none">
-		<td></td>
-		<td><input size="50" type="text" name="title" value=""></td>
-		<td><select name="category"><option value="0"> Category</option><?= make_select_list_key($categories) ?></select></td>
-	</tr>
-
-	<tr><td colspan="2"><button onclick="addStep()">add step</button></td></tr>
 </table>
+
+Add an Answer:<br>
+<form method="post" action="/createanswer">
+<input type="hidden" name="stepid" value="<?= $step['id'] ?>">
+<select name="type"><?= make_select_list_key($types) ?></select>
+<input name="detail" size="40"><input type="submit" value="Add Answer">
+</form>
+
+<form method="post" action="/createsubquestion">
+<input type="hidden" name="stepid" value="<?= $step['id'] ?>">
+Sub question id: <input name="substepid" size="5">
+<input type="submit" value="Add Question">
+</form>
 
 
 
@@ -90,6 +102,7 @@ $(function() {
 			<textarea rows="5" cols="70" name="comment"></textarea>
 			<br>
 			<input type="submit" value="Post Comment">
+			</form>
 		</td>
 	</tr>
 </table>

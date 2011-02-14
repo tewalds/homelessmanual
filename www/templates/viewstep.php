@@ -14,7 +14,7 @@
 <?
 	$count = 1;
 	foreach($substeps as $substep ){ ?>
-			<tr><td>[+]</td><td><?= $count ?>.<a href="/viewstep?id=<?= $substep['id'] ?>">Do you have a <?= $substep['title'] ?></a></td><td><input type="checkbox" alt=""></td></tr>
+			<tr><td>[+]</td><td><?= $count ?>.<a href="/viewquestion?id=<?= $substep['id'] ?>">Do you have a <?= $substep['title'] ?></a></td><td><input type="checkbox" alt=""></td></tr>
 <? 		$count++;
 	} ?>
 	

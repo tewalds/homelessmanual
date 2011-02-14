@@ -12,7 +12,7 @@
 	<? foreach($unanswered as $answer) { ?>
 	<tr>
 	 	<? if($answer['category'] == $catid) { ?>
-	 		<td><a href="/viewstep?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td>
+	 		<td><a href="/viewquestion?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td>
 	 	<? } ?>
 	</tr>
 	<? } ?>

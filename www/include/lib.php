@@ -1,4 +1,5 @@
 <?
+include("include/errorlog.php");
 include("include/mysql.php");
 $db = new MysqlDb($config['db_host'], $config['db_db'], $config['db_user'], $config['db_pass']);
 

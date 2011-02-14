@@ -39,12 +39,17 @@ $router->add("GET", "/editprofile",   "profile.php", "editprofile",   'user',  n
 $router->add("POST","/updateprofile", "profile.php", "updateprofile", 'user',  array("name" => "string", "organization" => "string", "bio" => "string"));
 
 
-$router->add("GET", "/viewstep",       "step.php",    "viewstep",     'any',   array("id" => "int"));
-$router->add("POST","/discussion",     "step.php",    "discussion",   'user',  array("stepid" => "int", "comment" => "string"));
-$router->add("GET", "/editstep",       "step.php",    "editstep",     'user',  array("id" => "int"));
-$router->add("GET", "/newstep",        "step.php",    "newstep",      'user',  null);
-$router->add("POST","/createstep",     "step.php",    "createstep",   'user',  array("title" => "string", "category" => "int"));
-$router->add("POST","/updatestep",     "step.php",    "updatestep",   'user',  array("id" => "int", "title" => "string", "category" => "int"));
+$router->add("GET", "/viewquestion",   "step.php",    "viewquestion",    'any',   array("id" => "int"));
+$router->add("GET", "/editquestion",   "step.php",    "editquestion",    'user',  array("id" => "int"));
+$router->add("GET", "/newquestion",    "step.php",    "newquestion",     'user',  null);
+$router->add("POST","/createquestion", "step.php",    "createquestion",  'user',  array("title" => "string", "category" => "int"));
+$router->add("POST","/updatequestion", "step.php",    "updatesquestion", 'user',  array("id" => "int", "title" => "string", "category" => "int"));
+$router->add("POST","/createanswer",   "step.php",    "createanswer",    'user',  array("stepid" => "int", "type" => "int", "detail" => "string"));
+$router->add("POST","/createsubquestion","step.php",  "createsubquestion",'user',  array("stepid" => "int", "substepid" => "int"));
+$router->add("POST","/updateanswer",   "step.php",    "updateanswer",    'user',  array("id" => "int", "type" => "int", "detail" => "string"));
+$router->add("POST","/discussion",     "step.php",    "discussion",      'user',  array("stepid" => "int", "comment" => "string"));
+
+
 $router->add("GET", "/answer",         "step.php",    "answer",       'user',  null);
 $router->add("GET", "/ask",            "step.php",    "ask",       'any',   null); 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?
 
-if(!$argv[1])
+if(!isset($argv[1]))
 	die("Need an input file name\n");
 
 $fd = fopen($argv[1], 'r');
@@ -15,10 +15,10 @@ fgetcsv($fd); //throw away the header
 include("include/config.php");
 include("include/lib.php");
 
-#$db->query("TRUNCATE steps");
-#$db->query("TRUNCATE stephist");
-#$db->query("TRUNCATE steporder");
-#$db->query("TRUNCATE discussion");
+$db->query("TRUNCATE steps");
+$db->query("TRUNCATE stephist");
+$db->query("TRUNCATE steporder");
+$db->query("TRUNCATE discussion");
 
 
 $types = array(
@@ -42,6 +42,7 @@ while (($data = fgetcsv($fd)) !== FALSE){
 	}
 
 	$subtype = $types[strtolower($data[3])];
+	$subid;
 	if($subtype == 1){
 		$row = $db->pquery("SELECT id FROM steps WHERE type = 1 & title = ?", $data[4])->fetchrow();
 		if($row){
