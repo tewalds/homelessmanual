@@ -23,7 +23,7 @@
 <? if(empty($substeps)) { ?>
 
 	<p>Unfortunately we do not have an answer for this question, if you would like to add one, click 
-	<a href="/editstep?id=<?= $step['id'] ?>">here.</a>
+	<a href="/editquestion?id=<?= $step['id'] ?>">here.</a>
 	</p>
 	<? } ?>
 
