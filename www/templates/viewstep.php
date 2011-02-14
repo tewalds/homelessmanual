@@ -14,6 +14,7 @@
 
 
 		<?
+		foreach($substeps as $substep ){ 
 			echo "$count.";
 			if($substep['type'] == 1){
 			?>
@@ -24,6 +25,7 @@
 			<tr><td><?= $substep['detail'] ?></td></tr>
 <?
 			}
+		}
 		?>
 
 
@@ -33,6 +35,7 @@
 
 
 
+<!--
 
 <?
 	$count = 1;
@@ -41,6 +44,7 @@
 <? 		$count++;
 	} ?>
 	
+-->
 </table>
 
 <? if(empty($substeps)) { ?>
