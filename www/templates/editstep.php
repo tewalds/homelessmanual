@@ -51,9 +51,9 @@ $(function() {
 		<?
 			echo "$count.";
 			if($substep['type'] == 1){
-				echo "<a href='/editquestion?id=$substep[id]'>$substep[title]</a>";
+				echo "&nbsp;&nbsp;&nbsp;<a href='/editquestion?id=$substep[id]'>$substep[title]</a>";
 			}else{
-				echo $substep['detail'];
+				echo "&nbsp;&nbsp;&nbsp;" $substep['detail'];
 			}
 		?>
 		</td>

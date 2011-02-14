@@ -13,11 +13,11 @@
 		foreach($substeps as $substep ){ 
 			if($substep['type'] == 1){
 			?>
-			<tr><td><a href="/viewquestion?id=<?= $substep['id'] ?>"><?= $substep['title'] ?></a></td></tr>
+			<tr><td>&nbsp;&nbsp;&nbsp;<a href="/viewquestion?id=<?= $substep['id'] ?>"><?= $substep['title'] ?></a></td></tr>
 
 <?			}else{
 ?>
-			<tr><td><?= $substep['detail'] ?></td></tr>
+			<tr><td>&nbsp;&nbsp;&nbsp;<?= $substep['detail'] ?></td></tr>
 <?
 			}
 		}
