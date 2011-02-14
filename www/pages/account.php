@@ -6,18 +6,17 @@ function login($data, $user){
 	if($user->userid)
 		redirect("/");
 	
-	if($data['email']) {
-	
-	echo "Login failed, try again";
-	
-	}
+	if($data['email'])
+		echo "Login failed, try again";
+
 
 	$email = $data['email'];
 	$longsession = $data['longsession'];
 	
-	?><table>
+	?><table align="center">
 	 <tr>
 	  <td><? include("templates/loginform.php"); ?></td>
+	  <td>&nbsp;&nbsp;&nbsp;</td>
 	  <td><? include("templates/createuser.php");?></td>
 	 </tr>
 	</table>
