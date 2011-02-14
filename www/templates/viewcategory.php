@@ -7,7 +7,6 @@
 	</tr>
 	
 	
-	<tr><td><h2>Top Questions</h2></td></tr>
 <? foreach($steps as $step){ ?>
 	<tr>
 		<td width="70%"><a href="/viewstep?id=<?= $step['id'] ?>"><?= $step['title'] ?></a></td>
