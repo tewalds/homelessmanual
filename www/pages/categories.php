@@ -31,6 +31,12 @@ function searchsteps($data, $user){
 	if(!$s && $data['term'])
 		$s = $data['term'];
 
+	$row = $db->pquery("SELECT id FROM steps WHERE title = ?", $s)->fetchrow();
+	if($row){
+		redirect("viewquestion?id=$row[id]");
+		return false;
+	}
+
 	$steps = $db->pquery("SELECT id, title FROM steps WHERE title LIKE ? ORDER BY `views` DESC LIMIT 20", "%$s%")->fetchrowset();
 
 	if($data['ajax']){
