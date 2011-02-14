@@ -10,7 +10,14 @@ function login($data, $user){
 
 	$email = $data['email'];
 	$longsession = $data['longsession'];
-	include("templates/loginform.php");
+	
+	?><table>
+	 <tr>
+	  <td><? include("templates/loginform.php"); ?></td>
+	  <td><? include("templates/createuser.php");?></td>
+	 </tr>
+	</table>
+	<? 	
 	return true;
 }
 
