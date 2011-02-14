@@ -14,7 +14,7 @@ function viewcategory($data, $user){
 	$category = $db->pquery("SELECT * FROM categories WHERE id = ?", $data['id'])->fetchrow();
 	
 	if($category){
-		$steps = $db->pquery("SELECT id, title FROM steps WHERE category = ? ORDER BY `views`", $data['id'])->fetchrowset();
+		$steps = $db->pquery("SELECT id, title FROM steps WHERE category = ? && type = 1 ORDER BY `views`", $data['id'])->fetchrowset();
 		include("templates/viewcategory.php");
 	}else{
 		echo "Invalid category";
