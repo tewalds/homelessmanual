@@ -49,7 +49,9 @@
 	<a href="/editquestion?id=<?= $step['id'] ?>">here.</a>
 	</p>
 	<? }else{
+	?>
 	 <a href="/editquestion?id=<?= $step['id'] ?>Edit this question</a>
+	 <?
 	} 
 	
 	?>
