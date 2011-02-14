@@ -15,9 +15,9 @@ function login($data, $user){
 	
 	?><table align="center">
 	 <tr>
-	  <td><? include("templates/loginform.php"); ?></td>
+	  <td valign="top"><? include("templates/loginform.php"); ?></td>
 	  <td>&nbsp;&nbsp;&nbsp;</td>
-	  <td><? include("templates/createuser.php");?></td>
+	  <td valign="top"><? include("templates/createuser.php");?></td>
 	 </tr>
 	</table>
 	<? 	
