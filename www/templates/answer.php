@@ -7,11 +7,11 @@
 	</tr>
 <? foreach($categories as $catid => $cattitle){ ?>
 	<tr>
-		<td width="70%"><a href="/viewcategory?id=<?= $catid ?>"><?= $cattitle ?></a></td>
+		<td width="70%"><br><br><h2><a href="/viewcategory?id=<?= $catid ?>"><?= $cattitle ?></a></h2></td>
 	</tr>
 	<? foreach($unanswered as $answer) {	
 		if($answer['category'] == $catid) { ?>
- 			<tr><td><a href="/viewquestion?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td></tr>
+ 			<tr><td>&nbsp;&nbsp;&nbsp;<a href="/viewquestion?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td></tr>
 		<? }
 	} ?>
 <? } ?>
