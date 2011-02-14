@@ -40,7 +40,7 @@ $(function() {
 		<td>
 			<h2>Edit your question:</h2>
 			<input type="hidden" id="stepid" name="stepid" value="<?= $step['id'] ?>">
-			<input size="40" type="text" id="title" name="title" value="<?= htmlentities($step['title']) ?>"><select id="category" name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $step['category']) ?></select><input type="submit" class="button" value="Update Step">
+			<input size="40" type="text" id="title" name="title" value="<?= htmlentities($step['title']) ?>"><select id="category" name="category"><option value="0"> Category</option><?= make_select_list_key($categories, $step['category']) ?></select><input type="submit" class="button" value="Update Question">
 		</td>
 		</form>
 	</tr>
@@ -60,6 +60,12 @@ $(function() {
 	</tr>
 <?	$count++; } ?>
 </table>
+
+
+
+<br><br>
+
+<hr>
 
 Add an Answer:<br>
 <form method="post" action="/createanswer">
