@@ -9,7 +9,7 @@
 	
 <? foreach($steps as $step){ ?>
 	<tr>
-		<td width="70%"><a href="/viewstep?id=<?= $step['id'] ?>"><?= $step['title'] ?></a></td>
+		<td width="70%"><a href="/viewquestion?id=<?= $step['id'] ?>"><?= $step['title'] ?></a></td>
 	</tr>
 <? } ?>
 
