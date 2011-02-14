@@ -45,7 +45,7 @@ $router->add("GET", "/newquestion",    "step.php",    "newquestion",     'user',
 $router->add("POST","/createquestion", "step.php",    "createquestion",  'user',  array("title" => "string", "category" => "int"));
 $router->add("POST","/updatequestion", "step.php",    "updatesquestion", 'user',  array("id" => "int", "title" => "string", "category" => "int"));
 $router->add("POST","/createanswer",   "step.php",    "createanswer",    'user',  array("stepid" => "int", "type" => "int", "detail" => "string"));
-$router->add("POST","/createsubquestion","step.php",  "createsubquestion",'user',  array("stepid" => "int", "substepid" => "int"));
+$router->add("POST","/createsubquestion","step.php",  "createsubquestion",'user',  array("stepid" => "int", "substepid" => "int", "subquestion" => "string"));
 $router->add("POST","/updateanswer",   "step.php",    "updateanswer",    'user',  array("id" => "int", "type" => "int", "detail" => "string"));
 $router->add("POST","/discussion",     "step.php",    "discussion",      'user',  array("stepid" => "int", "comment" => "string"));
 

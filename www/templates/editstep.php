@@ -68,9 +68,38 @@ Add an Answer:<br>
 <input name="detail" size="40"><input type="submit" value="Add Answer">
 </form>
 
+	<style>
+	.ui-autocomplete-loading { background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat; }
+	</style>
+	<script>
+	$(function() {
+		function log( message ) {
+			$( "<div/>" ).text( message ).prependTo( "#log" );
+			$( "#log" ).attr( "scrollTop", 0 );
+		}
+
+
+		$( "#subquestion" ).autocomplete("/searchsteps?ajax=1",
+		{
+			formatItem: function(data, i, n, value) {
+				console.log(arguments);
+				var match = value.match(/^(\d+)\s(.*)$/);
+				var id = match[1];
+				return match[2];
+			},
+			formatResult: function(data, value) {
+				var match = value.match(/^(\d+)\s(.*)$/);
+				var id = match[1];
+				return match[2];
+			}
+		});
+	});
+	</script>
+
+<div id="log"></div>
 <form method="post" action="/createsubquestion">
 <input type="hidden" name="stepid" value="<?= $step['id'] ?>">
-Sub question id: <input name="substepid" size="5">
+Sub question: <input id="subquestion" name="subquestion" size="40">
 <input type="submit" value="Add Question">
 </form>
 

@@ -98,8 +98,12 @@ function createanswer($data, $user) {
 	redirect("/editquestion?id=$data[stepid]");
 	return false;
 }
+
 function createsubquestion($data, $user) {
 	global $db;
+
+	if(!$data['substepid'])
+		$data['substepid'] = $db->pquery("SELECT id FROM steps WHERE title = ?", $data['subquestion'])->fetchrowset();
 
 	if($data['stepid'] && $data['substepid']){
 		$priority = $db->pquery("SELECT priority FROM steporder WHERE parentstepid = ? ORDER BY priority DESC LIMIT 1", $data['stepid'])->fetchrow();
