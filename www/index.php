@@ -72,7 +72,7 @@ switch($route->auth){
 
 	case 'user':
 		if($user->userid == 0)
-			redirect("/");
+			redirect("/login");
 		break;
 
 	case 'admin':
