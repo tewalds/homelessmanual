@@ -11,7 +11,7 @@
 	</tr>
 	<? foreach($unanswered as $answer) {	
 		if($answer['category'] == $catid) { ?>
- 			<tr><td><a href="/viewquestion?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td></tr>
+			<tr><td><a href="/editquestion?id=<?= $answer['id'] ?>"><?= $answer['title'] ?></a></td></tr>
 		<? }
 	} ?>
 <? } ?>
